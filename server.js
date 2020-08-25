@@ -140,4 +140,5 @@ app.get("/IndiaMap", (req, res) => {
     res.sendFile(path.join(__dirname, 'static', 'IndiaMap.html'));
 })
 
-app.listen(3000, () => console.log("Listening at port 3000...."));
+// app.listen(3000, () => console.log("Listening at port 3000...."));
+app.listen(process.env.PORT || 3000)
