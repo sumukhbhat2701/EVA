@@ -1,0 +1,382 @@
+<html>
+
+<head>
+    <title>SIR model</title>
+    <link href="./css/SIRModel.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<header id="navbar">
+
+    <nav>
+        <a id="logo" href="/">
+            <img src="img/corona.png" alt="Logo">
+
+        </a>
+        <a href="/"><span id="heading">CODS</span></a>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="/maps">COVID-19 Tracker</a></li>
+            <li><a href="/preditionsModel">Predictor</a></li>
+            <li><a href="/evaChatbot">EVA</a></li>
+            <li><a href="newsAndTweets">News and Tweets</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </nav>
+</header>
+<br><br>
+<h3 class="header">PREDICTOR MODEL</h3>
+<div id="webchat"></div>
+<script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.min.js"></script>
+<script>
+    WebChat.default.init({
+        selector: "#webchat",
+        initPayload: "/get_started",
+        customData: {
+            "language": "en"
+        }, // arbitrary custom data. Stay minimal as this will be added to the socket
+        socketUrl: "http://localhost:5005",
+        socketPath: "/socket.io/",
+        title: "EVA",
+        subtitle: "Talk to me!",
+        params: {
+            "storage": "session"
+        } // can be set to "local"  or "session". details in storage section.
+    })
+</script>
+
+<% if(data.prediction1!=null) {%>
+
+    <body>
+
+        <div class="inputs">
+            <form action="/predictions" method="POST">
+                <div class="labels" style="text-align:center;"><label for="date">You can try another date:<br><br></label></div>
+                <input class="dateInput" type="date" name="name" value="predDate" required><br>
+                <input class="button" type="submit" value="Predict">
+            </form>
+        </div>
+
+        <div class="results">
+            <strong style="color: cadetblue;font-size: 25px;"><em> PREDICTIONS:</em></strong>
+            <br>
+            <span class="dp1 textPredict"><%= data.prediction1 %></span><br>
+            <span class="dp2 textPredict"><%= data.prediction2 %></span>
+
+            <div class="p12">
+                <li>
+                    <p><strong style="color:plum;font-size: 23px;">What is the importance of 'flattening of the curve'?How can we flatten the curve? How can we decrease the effect of the virus?</strong></p>
+                    <iframe scrolling="no" title="SIR Model - Final" src="https://www.geogebra.org/material/iframe/id/ahr4d5hz/width/1000/height/600/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false"
+                        width="1000" height="600" style="border:0px;"> </iframe>
+                    <p>
+                        The above graph is plot with N = 1 (considering 1 as 100% of the country population). It can be used to visualize the changes different parameters can make on the epidemic.
+                    </p>
+                    <p>
+                        <ol>
+                            <li>Notice that on increasing the value of 'β' in the above graph, the curve width decreases and peak becomes more sharp. So we can flatten the curve by decreasing the value of β. This can be achieved by either decreasing the probability
+                                of disease transmission or decreasing human contact or both. <strong>Lockdowns, social distancing</strong> are the only strong tools to achieve this. Also <strong>wear masks and use sanitizers</strong> regularly. Believe
+                                it or not the value of R<sub>0</sub> was decreased from around 3 to less than 2 after first lockdown in India</li>
+                            <li>Also on decreasing the value of 'γ' in the above graph, the curve width decreases and peak becomes more sharp. So to flatten the curve, the value of γ. It can be done by decreasing the recovery period, which means getting recovered
+                                soon. Having a <strong>good immunity system</strong> is the key.There is not much we can do here, until the cure is found.</li>
+                            <li>R<sub>0</sub> which is the ratio of the both parameters mentioned above can be reduced by following the above mentioned points.</li>
+                        </ol>
+
+                    </p>
+                </li>
+            </div>
+            <div id="myButton" onclick="onClickHandle()">
+                Interested in knowing the math behind this?
+                <script>
+                    function onClickHandle() {
+                        document.getElementById("visibleNot").style.display = "block";
+                    }
+                </script>
+            </div>
+
+        </div>
+
+        <div id="visibleNot" style="display: none;">
+            <div class="table">
+                <strong style="color: cadetblue; font-size: 25px;"><em># VALUES USED:</em></strong>
+                <table id="forms">
+                    <tr>
+                        <th>Parameters</th>
+                        <th>Values</th>
+                    </tr>
+                    <tr>
+                        <td>Population(N)</td>
+                        <td>1380004385</td>
+                    </tr>
+                    <tr>
+                        <td>Basic Reproduction Number(R<sub>0</sub>)</td>
+                        <td>1.571869846974838</td>
+                    </tr>
+
+                    <tr>
+                        <td>Average recovery period(D)</td>
+                        <td>10 days</td>
+                    </tr>
+                    <tr>
+                        <td>beta(β)</td>
+                        <td>0.174</td>
+                    </tr>
+                    <tr>
+                        <td>gamma(γ)</td>
+                        <td>0.111</td>
+                    </tr>
+                    <tr>
+                        <td>Start of the pandemic</td>
+                        <td>23rd March 2020</td>
+                    </tr>
+                    <tr>
+                        <td>Initial Susceptible[S(0)]</td>
+                        <td>1380003888</td>
+                    </tr>
+                    <tr>
+                        <td>Initial Infected[I(0)]</td>
+                        <td>497</td>
+                    </tr>
+                    <tr>
+                        <td>Initial recovered/dead[R(0)]</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Actual data on March 23rd</td>
+                        <td>I=497,R=15+9</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <div class="p1">
+                    <strong style="color: cadetblue;font-size: 25px;"><em><h4># INTERESTED IN LEARNING MORE?</h4></em></strong>
+
+                    <p>Any epidemic, whether it be the Spanish flu or the present COVID-19, it can always be modelled by a set of differential equations. The simplest and basic of them all is the SIR model. This model with some fine tuning can give extraordinary
+                        results. With very much little information about the epidemic disease, it can give the count of number of susceptible(S),infected(I) and removed(recovered+dead - R) to the disease at any time t</p>
+
+                    <p>This model can be instrumental in predicting or forecasting the outcomes, so as to take necessary precautions to depreciate the spread of the disease. For example, considering the present COVID-19 situation, the need for lockdowns
+                        or social distancing can be reasoned mathematically by the results of the model. Isn't it amazing how a couple of differential equations can govern an entire epidemic?! </p>
+
+                </div>
+
+                <div class="p2">
+                    <strong style="color: cadetblue;font-size: 25px;"><em><h4><h4># ASSUMPTIONS:</h4></h4></em></strong>
+                    <p>It's not that easy to bring down a natural phenomena onto a paper just like that. So we make some assumptions:</p>
+                    <ul>
+                        <li>Population remains constant i.e the population at the start of the epidemic equals that at the end of it</li>
+                        <li>At any time t, the sum of susceptible,infected and removed counts always equals the population size i.e S(t)+I(t)+R(t) = N</li>
+                        <li>From these 2 assumptions we also arrive that the sum of rate of change of these 3 quantities w.r.t is always zero</li>
+                        <br><img class="equations" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4ef2c489d7916e880a3bccc6f85ccae3fb2f79a3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:35.638ex; height:2.843ex;"
+                            alt="{\displaystyle S(t)+I(t)+R(t)={\text{constant}}=N,}">
+                        <br><br><img class="equations" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8edc1234df2c16e511f3c417cfd1720c1086de05" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:21.18ex; height:5.509ex;"
+                            alt="{\displaystyle {\frac {dS}{dt}}+{\frac {dI}{dt}}+{\frac {dR}{dt}}=0,}">
+                    </ul>
+                </div>
+
+
+                <div class="p4">
+                    <strong style="color: cadetblue;font-size: 25px;"><em><h4># SOME PARAMETERS:</h4></em></strong>
+                    <ul>
+                        <li>The change of an individual from being susceptible to infected by the disease is effected by a constant, called <strong>"Transmission coefficient"</strong>, denoted by β. Similarly, the transmission from infected to removed is
+                            governed by a constant called <strong>"Recovery coefficient"</strong>, denoted by γ</li>
+                        <br><img class="equations" src="https://latex.codecogs.com/gif.latex?S(t)\overset{\beta&space;}{\rightarrow}I(t)\overset{\gamma&space;}{\rightarrow}R(t)" title="S(t)\overset{\beta }{\rightarrow}I(t)\overset{\gamma }{\rightarrow}R(t)"
+                        />
+                        <br><br>
+                        <li>Transmission coefficient or β is defined as the expected amount of people an infected person infects in a day. Simply,
+                            <strong><br><br><div class="beta" style="font-weight: lighter;background-color: seashell;color:black;margin:auto;margin-left: 300px;margin-right: 300px">β = average number of contacts per person x probability of disease transmission in a day</div></strong></li>
+                        <br>
+                        <li>Recovery coefficient or β is defined as the reciprocal of the average number of recovery days. Mathematically, if the D is recovery period in days:</li>
+                        <br><img class="equations" src="https://latex.codecogs.com/gif.latex?\mathbf{\gamma&space;=&space;\frac{1}{D}}" title="\mathbf{\gamma = \frac{1}{D}}" />
+                        <br>
+
+                    </ul>
+                </div>
+
+                <div class="p3">
+                    <strong style="color: cadetblue;font-size: 25px;"><em><h4># THE EQUATIONS:</h4></em></strong>
+                    <p>At any time t, let the number of susceptible,infected and removed(recovered+dead) be <strong>S(t) , I(t) and R(t)</strong> or <strong>S , I and R</strong> respectively.</p>
+                    <p>Any epidemic should and must follow these differential equations:</p>
+                    <img class="equations" src="https://wikimedia.org/api/rest_v1/media/math/render/svg/29728a7d4bebe8197dca7d873d81b9dce954522e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -9.171ex; width:17.834ex; height:19.509ex;"
+                        alt="{\displaystyle {\begin{aligned}&amp;{\frac {dS}{dt}}=-{\frac {\beta IS}{N}},\\[6pt]&amp;{\frac {dI}{dt}}={\frac {\beta IS}{N}}-\gamma I,\\[6pt]&amp;{\frac {dR}{dt}}=\gamma I,\end{aligned}}}">
+                    <br></div>
+
+
+                <div class="p5">
+                    <strong style="color: cadetblue;font-size: 25px;"><em><h4># LET'S DO SOME MATH!</h4></em></strong>
+                    <ol>
+                        <li><strong style="color:plum;font-size: 23px;">Rate of Susceptible population w.r.t time:</strong>
+                            <br><br>The people with contact with the infected, get inturn infected. Hence for a pair of 'S*I' people per 'N' people, 'β*S*I' people per 'N' people turn infected from susceptible state. Therefore, with a increase in the
+                            time interval 'Δt', the number of susceptibles decrease by the factor of '(β*S*I*Δt)/N' than the susceptibles in the past time 't'. Mathematically speaking:
+                            <br><br><img class="equations" src="https://latex.codecogs.com/gif.latex?\mathbf{S(t&plus;\Delta&space;t)&space;=&space;S(t)&space;-&space;\frac{\beta&space;IS\Delta&space;t}{N}}" title="\mathbf{S(t+\Delta t) = S(t) - \frac{\beta IS\Delta t}{N}}"
+                            />
+                            <br>By some mathematical manipulations, we arrive at the desired result:
+                            <br><br><img class="equations" src="https://latex.codecogs.com/gif.latex?\mathbf{\lim_{\Delta&space;t&space;\mapsto&space;0}&space;\frac{S(t&plus;\Delta&space;t)&space;-&space;S(t)}{\Delta&space;t}&space;=&space;\lim_{\Delta&space;t&space;\mapsto&space;0}\frac{-\beta&space;IS}{N}&space;}"
+                                title="\mathbf{\lim_{\Delta t \mapsto 0} \frac{S(t+\Delta t) - S(t)}{\Delta t} = \lim_{\Delta t \mapsto 0}\frac{-\beta IS}{N} }" />
+                            <br><br><img class="equations" src="https://latex.codecogs.com/gif.latex?\mathbf{&space;\frac{dS}{dt}&space;=&space;\frac{-\beta&space;IS}{N}&space;}" title="\mathbf{ \frac{dS}{dt} = \frac{-\beta IS}{N} }" />
+                        </li><br>
+
+                        <li><strong style="color:plum;font-size: 23px;">Rate of Removed population w.r.t time:</strong>
+                            <br><br>For a population of 'I' number of infected people at a time 't', with a increase in time of 'Δt', 'γ*I*Δt' fraction of increase in infected population is to be seen than initially. Mathematically,
+                            <br><br><img class="equations" src="https://latex.codecogs.com/gif.latex?\mathbf{R(t&plus;\Delta&space;t)&space;=&space;R(t)&plus;\gamma&space;I\Delta&space;t}" title="\mathbf{R(t+\Delta t) = R(t)+\gamma I\Delta t}" />
+                            <br>By some mathematical manipulations, we arrive at the desired result:
+                            <br><br><img class="equations" src="https://latex.codecogs.com/gif.latex?\mathbf{&space;\lim_{\Delta&space;t&space;\mapsto&space;0&space;}\frac{R(t&plus;\Delta&space;t)&space;-&space;R(t)}{\Delta&space;t}&space;=&space;\lim_{\Delta&space;t&space;\mapsto&space;0&space;}&space;\gamma&space;I}"
+                                title="\mathbf{ \lim_{\Delta t \mapsto 0 }\frac{R(t+\Delta t) - R(t)}{\Delta t} = \lim_{\Delta t \mapsto 0 } \gamma I}" />
+                            <br><br><img class="equations" src="https://latex.codecogs.com/gif.latex?\mathbf{&space;\frac{dR}{dt}&space;=&space;\gamma&space;I}" title="\mathbf{ \frac{dR}{dt} = \gamma I}" />
+                        </li><br>
+
+                        <li><strong style="color:plum;font-size: 23px;">Rate of Infected population w.r.t time:</strong>
+                            <br>
+                            <br>From the 3rd assumption that the sum of rate of change of the 3 quantities w.r.t is always zero, we can say that the infected population gains the same amount as the susceptible population and looses the same amount as
+                            the removed population gains.
+                            <br><br><img class="equations" src="https://latex.codecogs.com/gif.latex?\mathbf{&space;I(t&plus;\Delta&space;t)&space;=&space;I(t)&space;&plus;&space;\frac{\beta&space;IS\Delta&space;t}{N}&space;-&space;\gamma&space;I\Delta&space;t}"
+                                title="\mathbf{ I(t+\Delta t) = I(t) + \frac{\beta IS\Delta t}{N} - \gamma I\Delta t}" />
+                            <br>By some mathematical manipulations, we arrive at the desired result:
+                            <br><br><img class="equations" src="https://latex.codecogs.com/gif.latex?\mathbf{\lim_{\Delta&space;t&space;\mapsto&space;0&space;}&space;\frac{I(t&plus;\Delta&space;t)&space;-&space;I(t)}{\Delta&space;t}&space;=&space;\lim_{\Delta&space;t&space;\mapsto&space;0&space;}\frac{\beta&space;IS}{N}&space;-&space;\gamma&space;I}"
+                                title="\mathbf{\lim_{\Delta t \mapsto 0 } \frac{I(t+\Delta t) - I(t)}{\Delta t} = \lim_{\Delta t \mapsto 0 }\frac{\beta IS}{N} - \gamma I}" />
+                            <br><br><img class="equations" src="https://latex.codecogs.com/gif.latex?\mathbf{&space;\frac{dI}{dt}&space;=&space;\frac{\beta&space;IS}{N}&space;-&space;\gamma&space;I}" title="\mathbf{ \frac{dI}{dt} = \frac{\beta IS}{N} - \gamma I}"
+                            />
+                        </li><br>
+                    </ol>
+                </div>
+
+                <div class="p6">
+                    <p>
+                        <h4><strong style="color: cadetblue;font-size: 25px;"><em># ANALYSIS OF DATA:</em></strong></h4>
+                    </p>
+                </div>
+
+                <div class="p7">
+                    <ol>
+
+                        <li>
+                            <p><strong style="color:plum;font-size: 23px;">Will the disease spread?</strong></p>
+                            <p>As the rate of susceptibles always decrease with time, S
+                                < S(0). By substituting this in the infected rate change equation and performing some manipulations, we get a term R<sub>0</sub> i.e:
+                                    <br><img class="equations" src="https://latex.codecogs.com/gif.latex?\frac{dS}{dt}<0\Rightarrow&space;S&space;\leq&space;S_{0}\Rightarrow&space;\frac{dI}{dt}&space;<&space;I(\frac{\beta&space;S_{0}&space;}{N}&space;-&space;\gamma&space;)"
+                                        title="\frac{dS}{dt}<0\Rightarrow S \leq S_{0}\Rightarrow \frac{dI}{dt} < I(\frac{\beta S_{0} }{N} - \gamma )" />
+                                    <br><br><img class="equations" src="https://latex.codecogs.com/gif.latex?\frac{dI}{dt}&space;>&space;0\Rightarrow&space;(\frac{\beta&space;S_{0}}{N}&space;-\gamma&space;)>0" title="\frac{dI}{dt} > 0\Rightarrow (\frac{\beta S_{0}}{N} -\gamma )>0"
+                                    />
+                                    <br><br><img class="equations" src="https://latex.codecogs.com/gif.latex?\frac{\beta&space;S_{0}}{\gamma&space;N&space;}&space;>&space;0&space;\Rightarrow&space;\frac{\beta&space;}{\gamma&space;}&space;>&space;0&space;\Rightarrow&space;R_{0}&space;>0"
+                                        title="\frac{\beta S_{0}}{\gamma N } > 0 \Rightarrow \frac{\beta }{\gamma } > 0 \Rightarrow R_{0} >0" />
+                                    <br><br>R<sub>0</sub> is a term called <strong>"Basic Reproduction Number"</strong> defined by:
+                                    <br><br><img class="equations" src="https://latex.codecogs.com/gif.latex?N&space;\approx&space;S_{0}\Rightarrow&space;R_{0}&space;=&space;\frac{\beta&space;S_{0}}{\gamma&space;N}&space;\approx\frac{\beta&space;}{\gamma&space;}"
+                                        title="N \approx S_{0}\Rightarrow R_{0} = \frac{\beta S_{0}}{\gamma N} \approx\frac{\beta }{\gamma }" />
+                                    <br><br>Therefore, we can conclude that a disease can be said to be epidemic, if <strong>R<sub>0</sub> > 0.</strong>
+
+                            </p>
+                        </li>
+                </div>
+
+                <div class="p8">
+                    <ol start="2">
+                        <li>
+                            <p><strong style="color:plum;font-size: 23px;">How deadly is the infection?</strong></p>
+                            <p>Knowing the value of R<sub>0</sub> and γ with the help of recovery period of the disease, β can be calculated using:
+                                <br><br><img class="equations" src="https://latex.codecogs.com/gif.latex?\mathbf{&space;\beta&space;=&space;R_{0}*\gamma&space;}" title="\mathbf{ \beta = R_{0}*\gamma }" />
+                                <br><br>β defines how dangerous the disease is. Higher its value, more dangerous is the epidemic!
+                            </p>
+                        </li>
+                </div>
+
+                <div class="p9">
+                    <ol start="3">
+                        <li>
+                            <p><strong style="color:plum;font-size: 23px;">How can the value of R<sub>0</sub> calculated?</strong></p>
+                            <p>In countries like India, in most of the time of initial stages of the infection, the ratio of N and S will approximately equals 1, due to large value of N and approximately the population count increases rapidly.</p>
+                            <br><br><img class="equations" src="https://latex.codecogs.com/gif.latex?\frac{N}{S}\approx&space;1\Rightarrow&space;\frac{dI}{dt}&space;=&space;I\gamma&space;(\frac{\beta&space;}{\gamma&space;}-1)=I\gamma&space;(R_{0}-1)"
+                                title="\frac{N}{S}\approx 1\Rightarrow \frac{dI}{dt} = I\gamma (\frac{\beta }{\gamma }-1)=I\gamma (R_{0}-1)" />
+                            <br><br><img class="equations" src="https://latex.codecogs.com/gif.latex?\int_{I(0)}^{I(t)}&space;\frac{dI}{I}&space;=&space;\int_{t=0}^{t=t}\gamma&space;(R_{0}-1)dt" title="\int_{I(0)}^{I(t)} \frac{dI}{I} = \int_{t=0}^{t=t}\gamma (R_{0}-1)dt"
+                            />
+                            <br><br><img class="equations" src="https://latex.codecogs.com/gif.latex?I(t)&space;\approx&space;I(0)e^{\gamma&space;(R_{0}-1)t}&space;\Rightarrow&space;R_{0}&space;\approx&space;[\frac{1}{\gamma&space;t}]ln(\frac{I(t)}{I(0)})"
+                                title="I(t) \approx I(0)e^{\gamma (R_{0}-1)t} \Rightarrow R_{0} \approx [\frac{1}{\gamma t}]ln(\frac{I(t)}{I(0)})" />
+                        </li>
+                </div>
+
+                <div class="p10">
+                    <ol start="4">
+                        <li>
+                            <p><strong style="color:plum;font-size: 23px;">How many infected cases will the country have at the peak of the infection?</strong></p>
+                            <p>Dividing the rates of change of infected and susceptibles, we get:
+                                <br><br><img class="equations" src="https://latex.codecogs.com/gif.latex?\frac{\frac{dI}{dt}}{\frac{dS}{dt}}&space;=&space;\frac{dI}{dS}&space;=&space;-1&space;&plus;&space;\frac{N}{R_{0}S}" title="\frac{\frac{dI}{dt}}{\frac{dS}{dt}} = \frac{dI}{dS} = -1 + \frac{N}{R_{0}S}"
+                                />
+                                <br><br><img class="equations" src="https://latex.codecogs.com/gif.latex?\int_{I(0)}^{I(t)}&space;dI&space;=&space;\int_{S(0)}^{S(t)}&space;[-1&plus;\frac{N}{R_{0}S}]dS" title="\int_{I(0)}^{I(t)} dI = \int_{S(0)}^{S(t)} [-1+\frac{N}{R_{0}S}]dS"
+                                />
+                                <br><br><img class="equations" src="https://latex.codecogs.com/gif.latex?I(t)&space;&plus;&space;S(t)&space;-&space;\frac{N}{R_{0}}ln[S(t)]&space;=&space;I(0)&space;&plus;&space;S(0)&space;-&space;\frac{N}{R_{0}}ln[S(0)]"
+                                    title="I(t) + S(t) - \frac{N}{R_{0}}ln[S(t)] = I(0) + S(0) - \frac{N}{R_{0}}ln[S(0)]" />
+                                <br><br>Then we get the constraint for maximum infections by equating rate of change of infections to zero. i.e. We get the following maximum infections equation:
+                                <br><br><img class="equations" src="https://latex.codecogs.com/gif.latex?I_{max}&space;\Rightarrow&space;\frac{\mathrm{d}&space;I}{\mathrm{d}&space;t}&space;=&space;0&space;\Rightarrow&space;\frac{\beta&space;IS}{N}&space;-&space;\gamma&space;I&space;=&space;0&space;\Rightarrow&space;S&space;=&space;\frac{\gamma&space;N}{\beta}"
+                                    title="I_{max} \Rightarrow \frac{\mathrm{d} I}{\mathrm{d} t} = 0 \Rightarrow \frac{\beta IS}{N} - \gamma I = 0 \Rightarrow S = \frac{\gamma N}{\beta}" />
+                                <br><br><img class="equations" src="https://latex.codecogs.com/gif.latex?I_{max}&space;=&space;I(0)&plus;S(0)-\frac{N}{R_{0}}[1&plus;ln(\frac{N}{R_{0}})]" title="I_{max} = I(0)+S(0)-\frac{N}{R_{0}}[1+ln(\frac{N}{R_{0}})]"
+                                />
+
+                            </p>
+                        </li>
+                </div>
+
+                <div class="p11">
+                    <ol start="5">
+                        <li>
+                            <p><strong style="color:plum;font-size: 23px;">When will the country reach the peak of the infection?</strong></p>
+                            <p>By knowing the constants required by the model and by plotting the set of differential equations:
+                                <br><br><img class="equations" width="700px" height="400px" src="https://www.researchgate.net/profile/Md_Abdul_Kuddus2/publication/303804856/figure/fig2/AS:369449162035201@1465094952946/Comparison-of-susceptible-infected-and-recovered-curves-from-the-data-solid-line-and.png">
+                                <br>So with the help of this data, we can determine the peak of the infection which can help collect necessary resources for the epidemic.
+                            </p>
+                        </li>
+                </div>
+
+
+                <div class="p13">
+                    <ol start="7">
+                        <li>
+                            <p><strong style="color:plum;font-size: 23px;">What is the importance of 'flattening of the curve'?</strong></p>
+                            <ol>
+                                <li>Notice that on decreasing the value of β in the above graph or increasing the value of γ in the above graph, the peak drops down. Which means the number of infected people decrease.</li>
+                                <li>Keep β as 0.6 and γ as 0.3 in the above graph. Notice that the curve is flatten, and also the blue curve which is for susceptible goes above the red curve of the infected which is exactly the opposite case when the cure
+                                    isn't flattened. This means we have many susceptibles left, than infected and given more time for the discovery of the vaccine for the susceptibles. </li>
+                                <li>Gives government an estimate of the durations that lockdowns need to be enforced.</li>
+                            </ol>
+                        </li>
+                        </ul>
+                </div>
+
+
+                </ol>
+                <div class="p14">
+                    <strong style="color: cadetblue;font-size: 25px;"><em><h4># FINALLY, WHAT ALL THE MATH ABOVE SUGGESTS:</h4></em></strong>
+                    <ul>
+                        <li>Respect lockdowns</li>
+                        <li>Maintain social distancing</li>
+                        <li>Wear masks and use sanitizers regularly</li>
+                        <li>Boost your immunity system</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <footer>
+            <span>Center of Data Science, PES University 2020</span>
+        </footer>
+    </body>
+    <%} else {%>
+
+        <body>
+            <img src="img/gif.gif" alt="flattening the curve" class="gif">
+            <br><br>
+            <div class="dateInput">
+                <form action="/predictions" method="POST">
+                    <div class="labels"><label for="date">Enter the date to predict the number of cases:<br><br></label></div>
+                    <input class="dateInput" type="date" name="name" value="predDate" required><br>
+                    <input class="button" type="submit" value="Predict">
+                </form>
+            </div>
+            <br><br>
+            <footer>
+                <span>Center of Data Science, PES University 2020</span>
+            </footer>
+        </body>
+
+        <% } %>
+
+
+</html>

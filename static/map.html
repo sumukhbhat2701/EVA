@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>TRACKER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+    <link rel="stylesheet" href="css/maps.css">
+    <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+    <script>
+        window.onbeforeunload = function() {
+            window.scrollTo(0, 0);
+        };
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <!-- <a class="github-fork-ribbon right-bottom fixed" href="https://github.com/saksham49/CODS-NLP-ML-Team/tree/master/Website" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a> -->
+    <!-- the header -->
+    <header id="navbar">
+
+        <!-- our main logo -->
+        <nav>
+            <a id="logo" href="/">
+                <img src="img/corona.png" alt="Logo">
+
+            </a>
+            <a href="/"><span id="heading">CODS</span></a>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="/maps">COVID-19 Tracker</a></li>
+                <li><a href="/evaChatbot">EVA</a></li>
+                <li><a href="/preditionsModel">Predictor</a></li>
+                <li><a href="newsAndTweets">News and Tweets</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br>
+    <main>
+        <!--<div class="map1"><br>
+                <img src="img/map1.JPG" alt="map" class="image">
+                <div class="overlay">
+                    <div class="text"><em>This map shows all cases per each state/county in each country</em></div>
+                </div>
+            </div>-->
+        <div id="webchat"></div>
+        <script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.min.js"></script>
+        <script>
+            WebChat.default.init({
+                selector: "#webchat",
+                initPayload: "/get_started",
+                customData: {
+                    "language": "en"
+                }, // arbitrary custom data. Stay minimal as this will be added to the socket
+                socketUrl: "http://localhost:5005",
+                socketPath: "/socket.io/",
+                title: "EVA",
+                subtitle: "Talk to me!",
+                params: {
+                    "storage": "session"
+                } // can be set to "local"  or "session". details in storage section.
+            })
+        </script>
+        <h3 class="header">COVID-19 MAP TRACKERS</h3>
+        <div class="out" id='map1'>
+            <div class="overlay">
+                <div class="text"><em>This map shows the cases per each state or county or region in clusters.</em>
+                    <br><br><a href="/worldMap">VIEW</a>
+                </div>
+            </div>
+            <img src="img/map1.png" alt="States Info" style="width:100%" class="image1" />
+        </div>
+        <br>
+        <div class="out" id="map2">
+            <div class="overlay">
+                <div class="text"><em>This map shows the cases in each country</em>
+                    <br><br><a href="/worldMap1">VIEW</a>
+                </div>
+            </div>
+            <img src="img/map2.png" alt="Country Info" style="width:100%" class="image2">
+        </div>
+
+        <br>
+        <div class="out" id='map3'>
+            <div class="overlay">
+                <div class="text"><em>This map shows the cases in each state in depth of India</em>
+                    <br><br><a href="/IndiaMap">VIEW</a>
+                </div>
+            </div>
+            <img src="img/map3.png" alt="Country Info" style="width:100%" class="image3">
+
+
+        </div>
+        <br>
+
+        <!-- the footer -->
+        <footer>
+            <span>Center of Data Science, PES University 2020</span>
+            <!-- Include all the libraries, languages and frameworks used to build the website -->
+        </footer>
+    </main>
+</body>
+
+</html>

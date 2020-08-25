@@ -1,0 +1,195 @@
+#container {
+    margin: auto;
+    }
+    #map {
+        position: absolute;
+        /* float: right; */
+        width: 100%;
+        height: 100%;;
+        z-index: 1;
+    }
+    #legend1 {
+        position: relative;
+        /* float: left; */
+        z-index: 3;
+    }
+    /* fanon */
+    .axis path {
+        stroke: white;
+    }
+      .axis line {
+        stroke: white;
+    }
+      text { 
+        fill: white;
+    }
+    #filterButton{
+      position: absolute;
+      bottom: 0;
+      z-index: 3;
+    }
+    #tccButton{
+      width: 140px;
+      height: 50px;
+      border-radius: 11%;
+      background-color: orange;
+      opacity: 0.3;
+      text-align: center;
+      display: inline-block;
+      padding: 2px;
+      margin: 10px;
+    }
+    #tccButton span{
+      font: bold;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      opacity: 1;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+    }
+    #tccButton:hover{
+      cursor: pointer;
+      background-color: orange;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      opacity: 0.7;
+    }
+    #acButton{
+      width: 140px;
+      height: 50px;
+      border-radius: 11%;
+      background-color: blue;
+      opacity: 0.3;
+      text-align: center;
+      display: inline-block;
+      padding: 2px;
+      margin: 10px;
+    }
+    #acButton span{
+      font: bold;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      opacity: 1;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+    }
+    #acButton:hover{
+      cursor: pointer;
+      background-color: blue;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      opacity: 0.7;
+    }
+    #recoveredButton{
+      width: 140px;
+      height: 50px;
+      border-radius: 11%;
+      background-color: green;
+      opacity: 0.3;
+      text-align: center;
+      display: inline-block;
+      padding: 2px;
+      margin: 10px;
+    }
+    #recoveredButton span{
+      font: bold;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      opacity: 1;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+    }
+    #recoveredButton:hover{
+      cursor: pointer;
+      background-color: green;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      opacity: 0.7;
+    }
+    #dButton{
+      width: 140px;
+      height: 50px;
+      border-radius: 11%;
+      background-color: red;
+      opacity: 0.3;
+      text-align: center;
+      display: inline-block;
+      padding: 2px;
+      margin: 10px;
+    }
+    #dButton span{
+      font: bold;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      opacity: 1;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+    }
+    #dButton:hover{
+      cursor: pointer;
+      background-color: red;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+      opacity: 0.7;
+    }
+    .fixed-btn{
+        position: fixed;
+        bottom: 5%;
+        right: 3%;
+        text-align: center;
+        cursor: pointer;
+        transition: margin-left .5s;
+      }
+      
+      .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      .content {
+        color: white;
+        text-align: center;
+      }
+    
+      /* dropdown */
+      .state-dropown{
+        text-align: center;
+      }
+    
+      .form-control{
+        height: 35px;
+        width: auto;
+        background-color: #023037;
+        color: #fff;
+        font-weight: bold;
+      }
+    
+      @media screen and (max-height: 450px) {
+        .sidebar {padding-top: 15px;}
+        .sidebar a {font-size: 18px;}
+      }

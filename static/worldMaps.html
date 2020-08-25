@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" /> -->
+  <title>COVID-19 TRACKER</title>
+  <link rel="stylesheet" href="./css/worldMaps.css">
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css">
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.css" type="text/css">
+</head>
+
+<body>
+
+  <header id="navbar">
+
+    <!-- our main logo -->
+    <nav>
+        <a id="logo" href="/">
+            <img src="img/corona.png" alt="Logo">
+            
+        </a> 
+        <a href="/"><span id="heading">CODS</span></a>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="/maps">COVID-19 Tracker</a></li>
+            <li><a href="/evaChatbot">EVA</a></li>
+            <li><a href="/preditionsModel">Predictor</a></li>
+            <li><a href="newsAndTweets">News and Tweets</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+</header>
+
+  <br><br><br>
+  <div style="text-align: center;"><h1><em style="color:antiquewhite;font-size: 30px;">Region-Wise Clusters</em></h1></div>
+  <div class="container" style="width:100%">
+    
+    <div id="map" style='width: 90%; height: 90vh; float: left;'></div>
+    <br><br>
+
+    <div id="corona-world-details" style="float: right;margin-top: 150px;margin-left:50px;">
+    </div>
+    <!-- <div style="color:antiquewhite;font-size: 30px;">3.CountryWise Details</div><br>
+    <div id='countryMaps' style='width: 50vw; height: 50vh;'></div>
+
+    <select name="select-country">
+    </select>
+    <div id="corona-details">
+    </div>
+    
+  </div> -->
+</div>
+  <p id="demo"></p>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
+  <script
+    src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.min.js"></script>
+  <script src="./script/worldMaps.js"></script>
+
+    <!-- the footer -->
+    <footer>
+      <span>Center of Data Science, PES University 2020</span>
+  <!-- Include all the libraries, languages and frameworks used to build the website -->  
+  </footer>
+</body>
+
+</html>

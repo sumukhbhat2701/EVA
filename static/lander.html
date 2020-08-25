@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>HOME</title>
+  <link rel="stylesheet" href="css/lander.css">
+  <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+
+</head>
+<body>
+  <div id="page">
+    <header id="navbar">
+
+        <!-- our main logo -->
+        <nav>
+            <a id="logo" href="/">
+                <img src="img/corona.png" alt="Logo">
+                
+            </a> 
+            <a href="/"><span id="heading">CODS</span></a>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="/maps">COVID-19 Tracker</a></li>
+                <li><a href="/evaChatbot">EVA</a></li>
+                <li><a href="/preditionsModel">Predictor</a></li>
+                <li><a href="newsAndTweets">News and Tweets</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+          </nav>
+    </header>
+    <div id="webchat"></div>
+            <script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.min.js"></script>
+            <script>
+            WebChat.default.init({
+                selector: "#webchat",
+                initPayload: "/get_started",
+                customData: {"language": "en"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+                socketUrl: "http://localhost:5005",
+                socketPath: "/socket.io/",
+                title: "EVA",
+                subtitle: "Talk to me!",
+                params: {"storage": "session"} // can be set to "local"  or "session". details in storage section.
+            })
+            </script>
+<section class='stats'> 
+  <div class="hero">
+    <!-- content for the hero -->
+    <div class="hero-content">
+        <video autoplay muted loop id="myVideo">
+            <source src="img/covid_vid.mp4" type="video/mp4">
+        </video>
+        <h1 class="hero-title">Our fight against <!--<span style="color:#ff0053">-->COVID-19.</span><span style="color:#47ce3b"> Stay safe.</span></h1>
+    </div>
+    <br><br>
+    <div class="stats">
+        <!-- content for the hero -->
+        <div class="container">
+            <h2 style="color: blanchedalmond;text-align: center;">The World and COVID-19</h2>
+            <div class="board">
+              <div class="card d"><i class="fa fa-tachometer"></i><h5>Total Cases</h5><span id="Wcases"></span></div>
+              <div class="card r"><i class="fa fa-th-list"></i><h5>Deaths</h5><span id="Wdeaths"></span></div>
+              <div class="card t"><i class="fa fa-times-circle"></i><h5>Recovered</h5><span id="Wrecovered"></span></div>
+            </div>
+            <h2 style="color: blanchedalmond;text-align: center;">India and COVID-19</h2>
+            <div class="board">
+              <div class="card d"><i class="fa fa-times"></i><h5>Total Cases</h5><span id="Icases"></span></div>
+              <div class="card r"><i class="fa fa-check-square-o"></i><h5>Deaths</h5><span id="Ideaths"></span></div>
+              <div class="card t"><i class="fa fa-eye"></i><h5>Recovered</h5><span id="Irecovered"></span></div>
+            </div>
+            <h2 style="color: blanchedalmond;text-align: center;">Karnataka and COVID-19</h2>
+            <div class="board">
+                <div class="card d"><i class="fa fa-times"></i><h5>Total Cases</h5><span id="Kcases"></span></div>
+                <div class="card r"><i class="fa fa-check-square-o"></i><h5>Deaths</h5><span id="Kdeaths"></span></div>
+                <div class="card t"><i class="fa fa-eye"></i><h5>Recovered</h5><span id="Krecovered"></span></div>
+            </div>
+    </div>
+</section>
+
+<section class="about">
+<div class="flex-container">
+	<div class="flex-slide tracker">
+		<div class="flex-title flex-title-tracker">Tracker</div>
+    <div class="flex-about flex-about-tracker"><p>A fetaure that shows total confirmed cases, recoveries and fatalties due to COVID-19 on the world map. We used Leaflet and Mapbox to build this.</p><br>
+      
+      <form method="get" action="/maps">
+        <button type="submit">GO TO THE MAP</button>
+      </form>
+      
+    </div>
+  </div>
+  
+	<div class="flex-slide eva">
+		<div class="flex-title">EVA</div>
+    <div class="flex-about">
+      <p>This is an AI assisted chatbot that can answer your FAQs related to COVID-19 and mental health. You can also have a normal conversation. This was built using RASA framework.</p><br/>
+      <form method="get" action="myFunction()">
+        <button type="submit">CHAT NOW</button>
+      </form>
+      <!--<div id="EvaDiv">
+        Click on the bottom left part of the page to start your conversation.
+    </div>-->
+    </div>
+  </div>
+  
+	<div class="flex-slide predictor">
+		<div class="flex-title">Predictor</div>
+    <div class="flex-about"><p>A feature that mimics the SIR Mathematical model that can predict the number of confirmed cases in future.</p><br>
+      <form method="get" action="/preditionsModel">
+        <button type="submit">CHECK MODEL</button>
+      </form>
+    </div>
+  </div>
+  
+	<div class="flex-slide news">
+		<div class="flex-title">News & Tweets</div>
+    <div class="flex-about">
+          <p>A section which is a collection of trending news articles and important tweets related to COVID-19. </p><br>
+          <form method="get" action="/newsAndTweets">
+            <button type="submit">VIEW LATEST</button>
+          </form>
+    </div>
+	</div>
+</div>
+</section></div>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/2.4.0/jquery.waitforimages.min.js'></script>
+<script  src="script/lander.js"></script>
+
+</body>
+</html>

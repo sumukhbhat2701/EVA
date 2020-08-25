@@ -1,0 +1,593 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- depression
+- suicidal
+- thank
+- tragedy
+- stress
+- joke
+- img
+- song
+- quote
+- mentalHealth
+- findHelp
+- out_of_scope
+- smalltalk_human
+- faq_distancing
+- faq_symptoms
+- faq_vaccine
+- faq_vulnerable
+- faq_testing
+- faq_flu
+- faq_masks
+- faq_timescale
+- faq_spread
+- faq_handwashing
+- faq_curve
+- faq_whatisit
+- faq_origin
+- faq_status
+- hcq4
+- faq_supply
+- on_youth4
+- faq_gloves
+- on_pregnancy_and_childbirth
+- on_mass_gathering
+- on_youth5
+- public_advice
+- on_healthcareworkers16
+- on_healthcareworkers15
+- on_healthcareworkers14
+- on_healthcareworkers11
+- on_healthcareworkers9
+- on_healthcareworkers5
+- on_healthcareworkers4
+- on_healthcareworkers1
+- on_youth7
+- on_resource
+- on_physical_health
+- on_youth11
+- on_youth19
+- on_youth16
+- on_youth8
+- get_started
+- mood_bad
+responses:
+  utter_greet:
+  - text: Hey! How can I help you?
+  - text: Hello! What can I help you with?
+  - text: Hi, how's it going?
+  utter_did_that_help:
+  - buttons:
+    - payload: /affirm
+      title: 👍
+    - payload: /deny
+      title: 👎
+    text: Did that help you?
+  utter_happy:
+  - text: Great, carry on! 🙂
+  utter_goodbye:
+  - text: Bye 👋
+  - text: See you again :)
+  utter_sad:
+  - text: Thanks, I appreciate that, and I'm sorry 😔
+  utter_iamabot:
+  - text: I am EVA, here to help you!
+  utter_whatswrong:
+  - text: Is something wrong? :( Turn adversity into triumph. Talk to me about it,
+      this is a safe space!
+  utter_help_stressed:
+  - text: Take a nap. Remember that sleep is important.
+  - text: How about you give guided meditation a try?
+  - text: Stretch and take some deep breaths!
+  - text: Try watching a comedy show.
+  - text: Try going for a walk!
+  - text: "Here's what I dug up for you: http://www.cmha.ca/mental-health/understanding-mental-illness/depression/"
+  - text: You should excercise regularly, Spend some time with friends, family and
+      pets and take medical advice. For more help you can go to https://www.helpguide.org/articles/stress/stress-symptoms-signs-and-causes.htm
+  utter_suicide_help:
+  - text: 'You are not alone in this. Suicide doesn’t end the chances of life getting
+      worse, it eliminates the possibility of it ever getting any better. '
+  utter_suicide_help1:
+  - text: Helpine number - 91-9152987821. Someone is always there to help you :)
+  utter_cheer_up_song:
+  - text: https://open.spotify.com/track/7wMq5n8mYSKlQIGECKUgTX?si=ymm_eONJQxufci8gdVMg7Q
+  - text: https://open.spotify.com/album/5l3zEmMrOhOzG8d8s83GOL?highlight=spotify:track:6NPVjNh8Jhru9xOmyQigds
+  - text: https://open.spotify.com/album/3vLaOYCNCzngDf8QdBg2V1?highlight=spotify:track:32OlwWuMpZ6b0aN2RZOeMS
+  - text: https://open.spotify.com/album/3hThP1XVZUyFJ5SiOpAT8r?highlight=spotify:track:7sZ3HYHeHc9Oc4CqUS2Uyp
+  utter_cheer_up_joke:
+  - text: "Doctor: Sorry, I'm late.  Person: It's okay, I'm patient."
+  - text: What happens to a frog's car when it breaks down? It gets toad away.
+  - text: If you ever get cold, just stand in the corner of a room for a while. They're normally around 90 degrees.
+  - text: Why does Humpty Dumpty love autumn? Because Humpty Dumpty had a great fall.
+  utter_cheer_up_quote:
+  - text: Everyday might not be a good day, but there's something good in everyday.
+  - text: There is hope, even when your brain tells you there isn’t.
+  - text: Give yourself another day, another chance. You will find your courage eventually. Don’t give up on yourself just yet.
+  - text: Even if happiness forgets you a little bit, never completely forget about it.
+  - text: We must understand that sadness is an ocean, and sometimes we drown, while other days we are forced to swim.
+  utter_cheer_up_img:
+  - image: https://i.imgur.com/hiK5DIq.jpg
+    text: 'Here is something to cheer you up:'
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  - image: https://ichef.bbci.co.uk/childrens-responsive-ichef-live/r/400/1.5x/cbbc/Lifebabble-self-esteem-main.jpg
+    text: 'And always remember this 🙂'
+  utter_couldnt_help:
+  - text: I am sorry I couldn't be of any help. I am still learning and will try to
+      be better. Please don't lose any hope and try talking to a human expert.
+  utter_affirm:
+  - text: Glad I could help!
+  - text: I'm glad I could be useful 👍
+  utter_thankful:
+  - text: It's my pleasue. Hope you have a great day 😁
+  utter_hereisanother:
+  - text: Here comes another...
+  utter_cheer_up:
+  - buttons:
+    - payload: song
+      title: Song
+    - payload: image
+      title: Image
+    - payload: joke
+      title: Joke
+    - payload: quote
+      title: Quote
+    text: Would you like any of these? :)
+  utter_mhtreatment:
+  - text: Cognitive and behavioral therapies, Support groups, Family therapy, Yoga,
+      Exercise, Meditation. 
+  utter_help_depressed:
+  - text: You’re not alone in this. I may not understand exactly how you feel, but
+      I care about you and want to help. Few ways to tackle this is by expressing
+      yourself. Try noticing the good things!
+  utter_help_tragedy:
+  - text: Try not to feel tragic. Take as much time as is needed and mend properly,
+      take a gander at what's happened, gain from it, and discover approaches to assemble
+      another and sound life.Please don't dive into bad habits such as drug or alcohol or 
+      don't make a decision that can ruin your life.
+
+  utter_faq_vulnerable:
+  - text: All age groups and all category of people can catch COVID-19. While we are
+      still learning about how COVID-19 affects people, older persons (over 60 years)
+      and persons with pre-existing medical conditions, like high blood pressure,
+      heart disease, lung disease, cancer, diabetes etc, appear to develop serious
+      illness more often than others and maybe put on ventillators to counter their
+      breathing problems.Please take your vaccinations/medications for diseases you
+      already have as regularly.In experimental conditions, both cats and dogs and
+      other pets/animals were able to transmit infection to other animals of the same
+      species. However, there is no evidence that these animals can transmit the disease
+      onto humans and spread COVID-19 directly or through their faeces. However, it
+      may happen on contact.Please get tested as soon as possible when suspected,
+      irrelevent of you age.
+  utter_faq_testing:
+  - text: There are many tests like RDT,ELISA,Neutralization assay,antogen tests,Chemiluminescent
+      immunoassay etc. The most common is the RDT(Rapid diagnotic tests) where they
+      use a small, portable, positive/negative lateral flow assay that can be executed
+      at point of care. RDTs may process blood samples, saliva samples, or nasal swab
+      fluids. RDTs produce colored lines to indicate positive or negative results.
+      If you suspect that you may have the symptoms of COVID-19 or you were in contact
+      with the infected, you can take the test fearlessly as it has no harm and precautions
+      at the earliest may lead for early recovery.Don't panic, be the courage to be
+      positive in the mindset!
+  utter_faq_supply:
+  - text: 'Basic amenities and medicines will be availabe even during the pandemic.So
+      no need to panic and buy more stuffs.Just keep calm and follow the following:
+      When shopping, keep at least 1-metre distance from others and avoid touching
+      your eyes, mouth and nose. Once home, wash your hands thoroughly and also after
+      handling and storing your purchased products.Wash the fruits and vegetables
+      the same way you should do under any circumstance: before handling them,wash
+      your hands with soap and water.'
+  utter_faq_masks:
+  - text: Wearing a mask can limit the spread of certain respiratory viral diseases,
+      including COVID-19.Medical masks to be worn by medical faculties involved in
+      the treatment of COVID-19 infected and the general public can make use of general
+      non-medical masks.They have to disposed properly and seperated from general
+      waste after use(do no touch the front, remove by pulling the elastic ear straps
+      or laces from behind).Although their protective effectiveness to the wearer
+      is unknown, they may protect others if the wearer is a pre-symptomatic or asymptomatic
+      carrier. However, there are several case studies indicate that they reduce the
+      risk of infection.So it recommended to wear a mask while stepping out of the
+      house.No need to wear them inside your houses if there are no symptoms of the
+      same.
+  utter_faq_timescale:
+  - text: It was noticed that one third of the coronavirus sample mutated on experimental
+      conditions.Seasons or weather has no effect on the spread of COVID-19. It is
+      necessary to take equal precautions in all the seasons.There is no way to tell
+      when the epidemic will end.Predictions can be made using some mathematical modelling,
+      which may or may not be accurate results.The number of cases will gradually
+      decrease when hit its peak.More the people become aware and take precautions,
+      sooner there are chances for the epidemic to end! So, no need to fear.Follow
+      social distancing,wear masks,use sanitizers regularly and all the suggested
+      methods.You can refer to our prediction model which can give you an estimate
+      for the COVID-19 infection count.Again,it is subject to change!
+  utter_faq_handwashing:
+  - text: 'Clean your hands regularly and thorughly on all sides.Wash your hands with
+      soap and water, and dry them thoroughly.Use alcohol-based handrub/sanitizers
+      if you don’t have immediate access to soap and water.This decreases the risk
+      of infection.In non-health care settings like supermarkets,grocery shops etc,
+      sodium hypochlorite (bleach / chlorine) maybe used at a recommended concentration
+      of 0.1% or 1,000ppm (1 part of 5% strength household bleach to 49 parts of water).
+      Alcohol at 70-90% can also be used for surface disinfection.Studies have shown
+      that the COVID-19 virus can survive for up to 72 hours on plastic and stainless
+      steel, less than 4 hours on copper and less than 24 hours on cardboard.There’s
+      no research yet on exactly how long the virus can live on your skin or hair. '
+  utter_faq_whatisit:
+  - text: Novel CoronaVirus(nCOV) is a new strain of coronavirus that has not been
+      previously identified in humans.Coronaviruses are a large family of viruses
+      that are known to cause illness in humans and animals. In humans, this large
+      family of viruses are known to cause illness ranging from the common cold to
+      Severe Acute Respiratory Syndrome (SARS).COVID-19 is the infectious disease
+      caused by the most recently discovered coronavirus.nCOV directly effects the
+      respiratory organs and multiplies there.COVID-19 virus is primarily transmitted
+      between people through respiratory droplets and contact routes.There are no
+      conclusive evidences that it spreads through air. Mild symptoms include breathing
+      disorder,fever,dry cough,tiredness for 5-6 days and also maybe be severe as
+      death. Many cases are also asymptomatic or with no symptoms which is a case
+      of concern.
+  utter_faq_origin:
+  - text: It is believed to have zoonotic origins and has close genetic similarity
+      to bat coronaviruses, suggesting it emerged from a bat-borne virus. There is
+      no evidence yet to link an intermediate animal reservoir, such as a pangolin,
+      to its introduction to humans.The outbreak was first identified in Wuhan, China,
+      in December 2019. The World Health Organization declared the outbreak a Public
+      Health Emergency of International Concern on 30 January, and a pandemic on 11
+      March.
+  utter_hcq4:
+  - text: The Solidarity Trial is an international clinical trial to help find an
+      effective treatment for COVID-19, launched by WHO and partners. It is hoped
+      that one or more of the treatments under trial will result in improving clinical
+      outcomes in COVID-19 patients and save lives. Other trials are on-going around
+      the world in addition to the Solidarity Trial. Based on data from laboratory
+      and clinical studies, Remdesivir, Lopinavir/Ritonavir, Lopinavir/Ritonavir with
+      Interferon beta-1a, and hydroxychloroquine had been initially selected as treatment
+      options. Following new evidence on the safety and efficacy of hydroxychloroquine
+      as a treatment for hospitalized  COVID-19 patients, enrollment for this drug
+      was temporarily suspended on 24 May 2020.
+  utter_on_youth4:
+  - text: Seek medical care, if you or the people you know like your members of your
+      family get seriously ill.If possible,either you or an adult should phone the
+      local or national COVID-19 emergency number for advice on where and how you
+      could get care. If mild-symptoms are seen, one can be self-isolated(self-quarantine)
+      and symptoms can be kept track of.Unless the case is serious or it is a child
+      or an old-aged person, seek help immediately!Always wear mask,keep 1m distance
+      and avoid touching surfaces while visiting a health-case facility.
+  utter_faq_gloves:
+  - text: The use of gloves by the public in public spaces is not a recommended or
+      proven prevention measure.People can also transfer pathogens from one surface
+      to another by touching with gloved hands, or even transfer pathogens to the
+      mouth, nose, or eyes if they touch their face with gloved hands.But hand hygiene
+      is the key!
+  utter_on_pregnancy_and_childbirth:
+  - text: There is no evidence that pregnant are at higher risk of severe illness
+      than the general population.They can't passon their infection to their unborn
+      baby. But it may happen on contact when born.Pregnant women and women who have
+      recently delivered – including those affected by COVID-19 - should attend their
+      routine care appointments. WHO recommendations are that pregnant women with
+      symptoms of COVID-19 should be prioritized for testing.To date, the active virus
+      has not been found in samples of amniotic fluid or breastmilk.WHO advice is
+      that caesarean sections should only be performed when medically justified.Hands
+      should be washed properly before and after touching your baby, and keep all
+      surfaces clean!Pregnant women should be taken care in the same way as any other
+      individuals and should be kept away from the crowd as much as possible.
+  utter_on_mass_gathering:
+  - text: An event counts as a “mass gathering” if the number of people it brings
+      together is so large that it has the potential to strain the planning and response
+      resources of the health system in the community where it takes place. You need
+      to consider the location and duration of the event as well as the number of
+      participants. It is WHO’s view that all countries with community transmission
+      should seriously consider postponing or reducing mass gatherings.Promote hand
+      washing, respiratory hygiene and social distancing at the event. Make sure you
+      have emergency contact details for all participants, including where they are
+      staying during the event. You should make it clear to them that this information
+      will be shared with the local public health authorities to enable rapid contact
+      tracing if a participant at the event becomes ill with COVID-19.
+  utter_on_mass_gathering1:
+  - text: The event organisers need to have an agreed preparedness plan in case one
+      or more participants become ill with COVID-19 symptoms. This should include
+      rapid isolation of the ill person and their safe transfer to a local health
+      facility.Temperature screening can be done but it is more effective to provide
+      prevention recommendation messages to travellers and to collect health declarations
+      at arrival, with travellers’ contact details, to allow for a proper risk assessment
+      and a possible contact tracing of incoming travellers.Establish close collaboration
+      with local public health authorities well before the event, to facilitate testing
+      for athletes, officials or spectators who meet pre-agreed suspect cases definitions.
+      Also promote:signage, digital messaging to all participants and their entourages
+      about COVID-19 and how to prevent infectionregular disinfection and cleaning
+      of surfaces, in venues and in personal spaces non-sharing of equipment and cleaning
+      of equipment after each user.
+  utter_on_mass_gathering2:
+  - text: For more info:https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/points-of-entry-and-mass-gatherings
+  utter_on_youth5:
+  - text: There is no evidence that COVID-19 is transmitted through semen or vaginal
+      fluids. However, having sex with someone means that you are very close to them.
+      This puts one person at risk if the other person has COVID-19. Masturbation
+      does not involve another person, and carries no risk of COVID-19.In 2019, WHO
+      issued a new guideline that brought together some sexual and reproductive health
+      self-care interventions.
+  utter_on_youth6:
+  - text: The full list of recommendations can be found here:https://apps.who.int/iris/bitstream/handle/10665/325719/WHO-RHR-19.14-eng.pdf
+  utter_on_public_advice:
+  - text: While outside, people should always follow physical distancing measures,
+      staying at least one metre from another person; perform hand hygiene by washing
+      hands frequently with soap and water or using alcohol-based hand rub; follow
+      good respiratory hygiene by covering your mouth and nose with your bent elbow
+      or tissue when coughing or sneezing; avoid touching your eyes, nose and mouth;
+      and avoid crowded places.When grocery shopping or in the public, keep at least
+      1-metre distance.
+  utter_on_public_advice1:
+  - text: Once home from office or shopping or anywhere public,wash your hands thoroughly
+      with soap and water.Wash the fruits and vegetables thoroughly with clean water,
+      especially if you eat them raw.There is no epidemiological information to suggest
+      that contact with goods, products or vehicles shipped from COVID-19 affected
+      regions. Cleaning should be done as regularly.
+  utter_on_healthcareworkers16:
+  - text: A model for setting up an isolation ward is currently under development.
+      PPE specifications for healthcare workers caring for nCoV patients can be found  in
+      the disease commodity package at:https://www.who.int/publications-detail/disease-commodity-package---novel-coronavirus-(ncov)
+  utter_on_healthcareworkers15:
+  - text: There are no special procedures for the management of bodies of persons
+      who have died from 2019-nCoV. Authorities and medical facilities should proceed
+      with their existing policies and regulations that guide post-mortem management
+      of persons who died from infectious diseases.
+  utter_on_healthcareworkers14:
+  - text: Waste produced during the health care or home care of patients with suspected
+      or confirmed 2019-nCoV infection should be disposed of as infectious waste.
+  utter_on_healthcareworkers11:
+  - text: To treat suspected or confirmed 2019-nCoV acute respiratory disease patients.
+      However, countries or local jurisdictions may choose to care for patients at
+      such hospitals if those are deemed the most likely to be able to safely care
+      for patients.(e.g., availability of advanced life support). Regardless, any
+      healthcare facility treating patients with suspected or confirmed 2019-nCoV
+      patients should adhere to the WHO infection prevention and control recommendations
+      for healthcare to protect patients, staff and visitors.
+  utter_helpline:
+  - text: For any COVID 19 related queries, call your State Helpline/Ministry of Health
+      and Family Welfare's 24X7 helpline at 1075 or 011-23978046. or visit https://covid19.karnataka.gov.in/page/Helpline/en
+      if you are from Karnataka.
+  utter_on_healthcareworkers9:
+  - text: Ideally, suspected and confirmed 2019-nCoV acute respiratory disease patients
+      should be isolated in single rooms. However, when this is not feasible (e.g.,
+      limited number of single rooms), cohorting is an acceptable option. Some patients
+      with suspected 2019-nCoV infection may actually have other respiratory illnesses,
+      hence they must be cohorted separately from patients with confirmed 2019-nCoV
+      infection. A minimum of 1-meter distance between beds should be maintained at
+      all times.
+  utter_on_healthcareworkers5:
+  - text: In terms of PPE, contact and droplet precautions include wearing disposable
+      gloves to protect hands, and clean, non-sterile, long-sleeve gown to protect
+      clothes from contamination, medical masks to protect nose and mouth, and eye
+      protection (e.g.,goggles, face shield), before entering the room where suspected
+      or confirmed 2019-nCoV acute respiratory disease patients are admitted. Respirators
+      (e.g. N95) are only required for aerosol generating procedures.Tests in the
+      COVID-19 testing centers should be conducted in a separate/isolation room, and
+      during NP specimen collection or swab test the patients should cover their mouth
+      with a medical mask or tissue.
+  utter_on_healthcareworkers4:
+  - text: Respiratory viruses are not known to be transmitted by blood transfusion.
+      Blood centers should have routine blood donor screening measures in place to
+      prevent individuals with respiratory symptoms or fever from donating blood.Blood
+      centers might encourage self-deferral of those with travel history to an COVID-19
+      affected country in the previous 14 days, or of those who have been diagnosed
+      with COVID-19 or are close contact with a confirmed COVID-19 case.
+  utter_on_healthcareworkers1:
+  - text: 'All individuals dealing with soiled bedding, towels and clothes from patients
+      with COVID-19 should: Wear appropriate personal protective equipment, which
+      includes heavy duty gloves, mask, eye protection (face shield/goggles), long-sleeved
+      gown, apron (if gown is not fluid resistant), boots or closed shoes before touching
+      any soiled linen.Wash and disinfect linen: washing by machine with warm water
+      (60-90°C) and laundry detergent is recommended.If machine washing is not possible,
+      linen can be soaked in hot water and soap or in 0.05% chlorine for approximately
+      30 minutes.'
+  utter_on_youth7:
+  - text: Staying at home is difficult and can get boring, but it may help to do something
+      you enjoy. This could be reading a book, playing games or listening to music.
+      Try to stay connected with friends and family every day either by communicating
+      with them by phone or internet if you can, or, if you live close to them and
+      the local rules allow you to, by talking in-person while keeping your distance.
+      You have the power to make choices that could save lives and together young
+      people can play an important part in fighting COVID-19.
+  utter_on_youth71:
+  - text: You might be one of the unlucky adolescents who does get severely ill if
+      you catch COVID-19, or you could spread it to others and be responsible for
+      them getting really ill or even dying. You have the power to make choices that
+      could save lives and together young people can play an important part in fighting
+      COVID-19. Read more:https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public
+  utter_on_resources:
+  - text: Health care workers and officers in covid 19 duty and first responders can
+      justifiably be prioritized. Their health helps preserve the health of others.Participants
+      of research aimed at developing vaccines, therapies or other critical resources
+      should receive some priority in receiving those resources because they havealso
+      helped save others by their participation. This is not an absolute priority
+      – for example, it should not take precedence over giving priority to those most
+      at risk in thecase of resources such as vaccines.
+  utter_on_resources1:
+  - text: While the principle of first come, first served is often applied when allocating
+      resources in health care settings, it is rarely appropriate in an emergency.
+      In practice,it is very likely to favour certain groups, such as those closest
+      to a distribution centre,those with access to better information, or those who
+      are most well-off.Younger populations appear to be at lower risk in the COVID-19
+      context.Consequently, the principle of youngest first should have low priority
+      for vaccine, but perhaps may have more weight if they do become sick and need
+      critical careresources.
+  utter_on_resources2:
+  - text: The allocation of different resources may find ethical justification in
+      different principles or values. For instance, if a novel vaccine is found to
+      be safe and effective, a lottery-based allocation may be justified among those
+      as highest risk, the old andthose with co-morbidities, if they outnumber available
+      vaccines.Maximizing utility should be balanced with the principle of priority
+      to the worst-off:centralizing the availability of resources in larger centres
+      may extend their benefits to more people, but may exclude isolated populations
+      and challenge our concern for those at highest risk.
+  utter_on_physical_health1:
+  - text: You can play games/sports but follow social distancing rules.It is best
+      to play individual games though. Do not exercise/play games if you have a fever,
+      cough and difficulty breathing.If you are able to go for a walk or bicycle ride
+      in parks or public places always practice physical distancing and wash your
+      hands with water and soap or hand sanitizers before you leave, when you get
+      to where you are going, and as soon as you get home and maintain physical distancing.
+      If you are not regularly active start slowly and with low intensity activities,
+      like walking and low impact exercises. Start with shorter amounts, like 5-10
+      minutes, and gradually build up to 30 minutes or more continuously over a few
+      weeks.Choose the right activity according to your health status and fitness
+      level. You should be able to breath comfortably and hold a conversation while
+      you do light- and moderate-intensity physical activity.
+  utter_on_physical_health2:
+  - text: Try and reduce long periods of time spent sitting, whether for work, studying,
+      watching TV, reading, or using social media or playing games using screens and
+      take breaks. Set up a regular routine to be active every day, by an exercise
+      break either by yourself, by joining an online class, or by setting up a time
+      to be active online with your friends or colleagues.Planning time to be active
+      with your children with active games at home, walks in the parks, or cycling
+      can be a way the whole family can relax, be together and be active and healthy
+      whilst at home.Do some muscle strengthening activities such as lifting weights
+      or improvise using full bottles of water or simply use your own body weight
+      and do sets of press ups, sit ups and squats. Make time for fun, such as dancing
+      to music.
+  utter_on_youth11:
+  - text: The reopening of schools should be carefully planned and prepared by including
+      the health and education policy-makers, teachers and other school staff, parents
+      and health and community workers., with all necessary measures in place to protect
+      the safety and health of everyone in the school community.Therefore,if your
+      school reopens, you should feel assured it is safe for you to go back to school
+      – provided that you strictly follow the guidelines and rules that will be provided
+      by your school. Of course, if you have any concerns with going back to school,
+      do not hesitate to speak out to your teachers and parents or guardians.Online
+      classes are always an alternative.
+  utter_on_youth19:
+  - text: 'This is a difficult time. Many people – including perhaps your parents
+      - are worrying about security, health, and money. When people are in the cramped
+      and confined living conditions of lockdown, these tensions and stress can become
+      even greater. It is normal to have disagreements. However, if the disagreements
+      become verbal or physical, then it is right to take action.Talk to your parents
+      or if you are worried about what is happening in your home, or don’t feel safe,
+      talk to a trusted adult about what worries you, and seek their advice.If you
+      have been sexually abused or raped and need urgent medical help or care, go
+      as soon as possible to the nearest hospital or clinic to ask for medical care.Read
+      more: https://www.unwomen.org/-/media/headquarters/attachments/sections/library/publications/2020/issue-brief-covid-19-and-ending-violence-against-women-and-girls-en.pdf?la=en&vs=5006
+      https://www.who.int/publications-detail/who-guidelines-for-the-health-sector-response-to-child-maltreatment
+      https://apps.who.int/iris/bitstream/handle/10665/331699/WHO-SRH-20.04-eng.pdf'
+  utter_on_youth16:
+  - text: COVID-19 has abruptly pushed many people’s daily lives online, and you may
+      be spending even more hours online than before. Try to limit the amount of screen
+      time that is not related to your studies or physical activity. It is important
+      to replace some of the recreational screen time with non-screen activities,
+      like listening to music, reading, playing board games, and physical activity,
+      like  going for a walk or jog. Excessive gaming can lead to “g aming disorder”
+      that leads to reduced sleep or day-night reversal, loss of appetite, aggression,
+      headaches, and attention problems.Beware of behaviours like sextual exploitation,blackmail,harassment
+      and bullying.Indulgement in such behaviour is a punishable crime as well.Refer
+      to trusted single source for covid-19 news and updates like google news.You
+      can refer to our news and tweets section to which google news is the source.
+  utter_on_youth8:
+  - text: Explain to your friends why it is important to protect themselves and others
+      by washing their hands, avoiding touching their face, always coughing or sneezing
+      into their elbow, sleeve, or a tissue, and cooperating with physical distancing
+      measures and movement restrictions when called on to do so. Maybe you can share
+      ideas for fun virtual activities that your friends can participate in,  and
+      you can encourage them to do them together with you or with other friends. But,
+      remember that you do not have control over other peoples’ actions so do not
+      get into an argument or a fight to try to change their minds.
+
+  utter_default:
+  - text: Sorry, didn't get that 🤷.  Could you please rephrase?
+  - text:  I didn't understand, could you rephrase that?
+  - text: I'm sorry, but I didn't understand you. Could you please rephrase what you
+      just said?
+  - text: I'm afraid I didn't get what you just said. Could you rephrase that?
+  - text: I didn't quite get that, could you rephrase your message?
+  - text: Could you rephrase your message? I didn't get it, I'm sorry.
+
+actions:
+- action_faq_distancing
+- action_faq_spread
+- action_faq_symptoms
+- action_faq_status
+- action_faq_vaccine
+- action_faq_flu
+- action_faq_curve
+- action_get_emotion
+- action_emotion_anger
+- action_emotion_fear
+- action_emotion_joy
+- action_emotion_love
+- action_emotion_sadness
+- action_emotion_surprise
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_sad
+- utter_iamabot
+- utter_faq_vulnerable
+- utter_faq_testing
+- utter_faq_supply
+- utter_faq_masks
+- utter_faq_timescale
+- utter_faq_handwashing
+- utter_faq_whatisit
+- utter_faq_origin
+- utter_hcq4
+- utter_on_youth4
+- utter_faq_gloves
+- utter_on_pregnancy_and_childbirth
+- utter_on_mass_gathering
+- utter_on_mass_gathering1
+- utter_on_mass_gathering2
+- utter_on_youth5
+- utter_on_youth6
+- utter_on_public_advice
+- uuter_on_healthcareworkers16
+- utter_on_healthcareworkers15
+- utter_on_healthcareworkers14
+- utter_on_healthcareworkers11
+- utter_on_healthcareworkers9
+- utter_on_healthcareworkers5
+- utter_on_healthcareworkers4
+- utter_on_public_advice1
+- utter_on_healthcareworkers1
+- utter_on_youth7
+- utter_on_youth71
+- utter_on_resources
+- utter_on_resources1
+- utter_on_resources2
+- utter_on_physical_health1
+- utter_on_physical_health2
+- utter_on_youth11
+- utter_on_youth19
+- utter_on_youth16
+- utter_on_youth8
+- utter_on_healthcareworkers16
+- utter_helpline
+- utter_cheer_up_img
+- utter_suicide_help
+- utter_suicide_help1
+- utter_cheer_up_song
+- utter_cheer_up_joke
+- utter_cheer_up_quote
+- utter_mhtreatment
+- utter_help_stressed
+- utter_help_depressed
+- utter_help_tragedy
+- utter_whatswrong
+- utter_thankful
+- utter_couldnt_help
+- action_find_help
+- action_help_depression
+- action_help_suicide
+- action_help_sad
+- custom_fallback_action
+- action_default_ask_affirmation
+- utter_default
+- utter_hereisanother
+- utter_affirm

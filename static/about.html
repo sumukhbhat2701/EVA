@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="css/about.css">
+    <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+
+    <header id="navbar">
+
+        <!-- our main logo -->
+        <nav>
+            <a id="logo" href="/">
+                <img src="img/corona.png" alt="Logo">
+
+            </a>
+            <a href="/"><span id="heading">CODS</span></a>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="/maps">COVID-19 Tracker</a></li>
+                <li><a href="/evaChatbot">EVA</a></li>
+                <li><a href="/preditionsModel">Predictor</a></li>
+                <li><a href="newsAndTweets">News and Tweets</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="webchat"></div>
+    <script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.min.js"></script>
+    <script>
+        WebChat.default.init({
+            selector: "#webchat",
+            initPayload: "/get_started",
+            customData: {
+                "language": "en"
+            }, // arbitrary custom data. Stay minimal as this will be added to the socket
+            socketUrl: "http://localhost:5005",
+            socketPath: "/socket.io/",
+            title: "EVA",
+            subtitle: "Talk to me!",
+            params: {
+                "storage": "session"
+            } // can be set to "local"  or "session". details in storage section.
+        })
+    </script>
+    <br><br><br>
+    <h3 class="header">ABOUT</h3>
+    <div class="about-info">
+        <p id="start">Hey there, Welcome to our page!</p>
+        <p id='info'>This is our multi-functional website here to assist you during this pandemic. The problem we are trying to tackle is the lack of mental health support and lot of doubts regarding the pandemic during these times. In addition to this, we are also
+            presenting statistics of COVID-19 throughout India and the World. We have also tried to mimic the SIR Mathematical model to predict the future stats of COVID-19. To make your life easier, we have compiled all the important news and tweets
+            pertaining to COVID-19 in a single page.
+            <br><br>
+            <p style="color:#e4dcaf; size:300px; text-align: center;">TECH STACK</p>
+            <ul>
+                <li>Web development – Express, NodeJS, CSS.</li>
+                <li>Scraping FAQ’s and latest news – BeautifulSoup and Selenium.</li>
+                <li>Twitter – Tweepy.</li>
+                <li>Chatbot – RASA : Rasa NLU, Rasa Core, rasa X</li>
+                <li>Emotion Detection - Keras(LSTM),NLTK</li>
+                <li>Prediction Model – SIR Model</li>
+                <li>Maps – Mapbox and Leaflet</li>
+                <li>Data Visualisation – D3 and Plotly</li>
+            </ul>
+        </p>
+        <!--<p id='frameworks'>
+            FRAMEWORKS USED
+            <ul>
+                <li>RASA for our chatbot</li>
+                <li>LEAFLET for pan-India stats</li>
+                <li>MAPBOX for World stats</li>
+                
+            </ul>
+        </p>-->
+    </div>
+    <br><br>
+    <h2 class="team">THE TEAM</h2>
+    <center>
+        <h2 class="team">Mentors</h2>
+        <div class="column1">
+
+            <div id="st-box">
+                <img src="img/saksham.jpg" alt="Saksham" style="width:250px; height:250px; margin-top:5px;"><br>
+                <p id="info">Saksham Gupta</p>
+                <a id="github" href="https://github.com/saksham49">
+                    <i class="fab fa-github" style="font-size:24px; color: white;"></i></a>
+
+            </div>
+
+            <div id="nd-box">
+                <img src="img/ruchika.jpg" alt="Ruchika" style="width:250px; height:250px; margin-top:5px;"><br>
+                <p id="info">Ruchika S</p>
+                <a id="github" href="https://github.com/RuchikaShashidhara">
+                    <i class="fab fa-github" style="font-size:24px; color: white; "></i></a>
+            </div>
+        </div><br>
+        <h2 class="team">Mentees</h2>
+        <div class="column2">
+
+            <div id="st-box">
+                <img src="img/adi.JPG" alt="Aditya" style="width:250px; height:250px; margin-top:5px;"><br>
+                <p id="info">Aditya Mehta</p>
+                <a id="github" href="https://github.com/adimehta03">
+                    <i class="fab fa-github" style="font-size:24px; color: white;"></i></a>
+
+            </div>
+
+            <div id="nd-box">
+                <img src="img/sumukh.jpeg" alt="Sumukh" style="width:250px; height:250px; margin-top:5px;"><br>
+                <p id="info">Sumukh Bhat</p>
+                <a id="github" href="https://github.com/sumukhbhat2701">
+                    <i class="fab fa-github" style="font-size:24px; color: white; "></i></a>
+            </div>
+
+            <div id="rd-box">
+                <img src="img/shreyas.JPG" alt="Shreyas" style="width:250px; height:250px; margin-top:5px;"><br>
+                <p id="info">Shreyas Devaraj</p>
+                <a id="github" href="https://github.com/shreyasdvrj">
+                    <i class="fab fa-github" style="font-size:24px; color: white;"></i></a>
+            </div>
+        </div>
+    </center>
+
+    <footer>
+        <span>Center of Data Science, PES University 2020</span>
+        <!-- Include all the libraries, languages and frameworks used to build the website -->
+    </footer>
+
+
+</body>
+
+</html>

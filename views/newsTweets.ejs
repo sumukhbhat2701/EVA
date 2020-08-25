@@ -1,0 +1,191 @@
+<html>
+
+<head>
+
+    <link href="./css/SIRModel.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<header id="navbar">
+
+    <nav>
+        <a id="logo" href="/">
+            <img src="img/corona.png" alt="Logo">
+
+        </a>
+        <a href="/"><span id="heading">CODS</span></a>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="/maps">COVID-19 Tracker</a></li>
+            <li><a href="/preditionsModel">Predictor</a></li>
+            <li><a href="/evaChatbot">EVA</a></li>
+            <li><a href="newsAndTweets">News and Tweets</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </nav>
+</header>
+<br><br>
+<h3 class="title">NEWS AND TWEETS</h3><br><br>
+<div id="webchat"></div>
+<script src="https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.min.js"></script>
+<script>
+    WebChat.default.init({
+        selector: "#webchat",
+        initPayload: "/get_started",
+        customData: {
+            "language": "en"
+        }, // arbitrary custom data. Stay minimal as this will be added to the socket
+        socketUrl: "http://localhost:5005",
+        socketPath: "/socket.io/",
+        title: "EVA",
+        subtitle: "Talk to me!",
+        params: {
+            "storage": "session"
+        } // can be set to "local"  or "session". details in storage section.
+    })
+</script>
+<section>
+    <%- include('partials/header') %>
+        <div id="container">
+            <% tweets.forEach(function(tweets){ %>
+                <% if(tweets.profilePictue!=undefined) {%>
+                    <div id="wrapper">
+                        <div id="namePic">
+                            <img id="profilePic" src=<%=tweets.profilePictue %> />
+
+
+                            <div id="header">
+                                <h3>
+                                    <ul id="myUL">
+                                        <li>
+                                            <a href=<%=tweets.Links %> > 
+                                <%= tweets.screenName %>
+                                </a>
+                                            <a href="https://twitter.com/<%=tweets.screenName %>">
+                                                <i class="fa fa-twitter" style="z-index: -1;"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </h3>
+                            </div>
+                        </div>
+                        <p id="tweet">
+                            <% if(tweets.Tweets.length>200){ %>
+                                <%= tweets.Tweets.substring(0,200) %>...
+                                    <% } else{ %>
+                                        <%= tweets.Tweets %>
+                                            <% } %>
+                        </p>
+                        <div id="lastUpdate">
+                            Tweeted On:
+                            <%= tweets.Timeframe %>
+                        </div>
+
+                    </div>
+                    <br>
+                    <hr id="tweetEnd">
+                    <hr id="tweetEnd">
+                    <%}%>
+                        <% }) %>
+        </div>
+        <div id="containerNews">
+            <div id="topNewsDiv">
+                <div id="newsHeader">
+                    <a href="#">Top News</a>
+                </div>
+                <% topNews.forEach(function(topNews){ %>
+                    <p>
+                        <a href=<%=topNews.Links %>>
+                        <%= topNews.News %>
+                        </a>
+                    </p>
+                    <hr style="border: 1px solid whitesmoke">
+                    <% }) %>
+
+            </div>
+            <div id="localNewsDiv">
+                <div id="newsHeader">
+                    <a href=<%=localNews[0].MainLink %>>Local News</a>
+                </div>
+                <% localNews.forEach(function(localNews){ %>
+                    <p>
+                        <a href=<%=localNews.Links %>>
+                        <%= localNews.News %>
+                        </a>
+                    </p>
+                    <hr style="border: 1px solid whitesmoke">
+                    <% }) %>
+
+            </div>
+            <div id="economicImpactDiv">
+                <div id="newsHeader">
+                    <a href=<%=economicImpact[0].MainLink %>>Economic Impact</a>
+                </div>
+                <% economicImpact.forEach(function(economicImpact){ %>
+                    <p>
+                        <a href=<%=economicImpact.Links %>>
+                        <%= economicImpact.News %>
+                        </a>
+                    </p>
+                    <hr style="border: 1px solid whitesmoke">
+                    <% }) %>
+
+            </div>
+            <div id="scienceResearchDiv">
+                <div id="newsHeader">
+                    <a href=<%=scienceResearch[0].MainLink %>>Science and Research</a>
+                </div>
+                <% scienceResearch.forEach(function(scienceResearch){ %>
+                    <p>
+                        <a href=<%=scienceResearch.Links %>>
+                        <%= scienceResearch.News %>
+                        </a>
+                    </p>
+                    <hr style="border: 1px solid whitesmoke">
+                    <% }) %>
+
+            </div>
+            <div id="travelImpactDiv">
+                <div id="newsHeader">
+                    <a href=<%=travelImpact[0].MainLink %>>Travel Impact</a>
+                </div>
+                <% travelImpact.forEach(function(travelImpact){ %>
+                    <p>
+                        <a href=<%=travelImpact.Links %>>
+                        <%= travelImpact.News %>
+                        </a>
+                    </p>
+                    <hr style="border: 1px solid whitesmoke">
+                    <% }) %>
+
+            </div>
+        </div>
+</section>
+
+
+
+<script>
+    var ctrlKeyDown = false;
+
+    $(document).ready(function() {
+        $(document).on("keydown", keydown);
+        $(document).on("keyup", keyup);
+    });
+
+    function keydown(e) {
+
+        if ((e.which || e.keyCode) == 116 || ((e.which || e.keyCode) == 82 && ctrlKeyDown)) {
+            e.preventDefault();
+        } else if ((e.which || e.keyCode) == 17) {
+            ctrlKeyDown = true;
+        }
+    };
+
+    function keyup(e) {
+        if ((e.which || e.keyCode) == 17)
+            ctrlKeyDown = false;
+    };
+</script>
+<%- include('partials/footer') %>

@@ -1,0 +1,1901 @@
+## intent:greet
+- hey
+- hello
+- hi
+- good morning
+- good evening
+- hey there
+- yo
+- Yo
+- what's up?
+- howdy
+- howdy?
+- hallo
+- hey!
+- Hey
+- Hello!
+- hi there
+- Hello There
+- mornin!
+- morning!
+- good afternoon
+- evening
+- You there?
+- Hoi
+
+
+## intent:goodbye
+- bye
+- goodbye
+- see you around
+- see you later
+- later!
+- bye now
+- ttyl
+- talk later
+- Bye!
+- good bye
+- bye bye
+- later gater
+
+## intent:affirm
+- yes
+- indeed
+- of course
+- that sounds good
+- correct
+- positive
+- yup
+- indeed
+- okay
+
+## intent:deny
+- no
+- never
+- I don't think so
+- don't like that
+- no way
+- not really
+- nope
+- negative
+- negation
+
+## intent:mood_great
+- perfect
+- very good
+- great
+- amazing
+- wonderful
+- I am feeling very good
+- I am great
+- I'm good
+- doing good
+
+## intent:mood_unhappy
+- sad
+- very sad
+- unhappy
+- bad
+- very bad
+- awful
+- terrible
+- not very good
+- extremely sad
+- so sad
+- i'm sad
+- i am sad
+- doing bad
+- i am very sad
+- not good
+- i don't feel so good
+
+## intent:bot_challenge
+- are you a bot?
+- are you a human?
+- am I talking to a bot?
+- am I talking to a human?
+
+## intent:thank
+- thanks
+- thank you
+
+## intent:depression
+- i am depressed
+- i feel alonee
+- depressed... help meee
+- depressed
+- i don't want to talk to you
+- i am depressed because i failed
+- its all my fault
+- i am not a good person
+- i want to be alone
+- no one cares about me
+- nothing in my life is exciting anymore
+
+## intent:suicidal
+- i feel suicidal
+- i want to commit suicide
+- i want to leave this world
+- can't live anymore
+- i am alone. i want to leave this world
+- lonely
+- i want to die
+- i have no hopes of living my life
+- what's the point of life?
+- what is the point of living?
+- i feel like commiting suicide
+- i feel like dying
+- i don't want to live anymore in this world
+
+## intent:tragedy
+- someone died
+- i lost somebody
+- i broke up
+- i miss someone
+- my relationship ended
+- i got divorced
+- my life is full of shit
+- something tragic happened to me
+- i feel tragic
+- i am addicted to drugs
+- i am addicted
+- i am addicted to alcohol
+- i am having a bad day
+- i am having a bad time
+- i am having a bad life
+
+
+## intent:stress
+- i'm too tired of everything
+- i am panicking 
+- i am breathing too fast
+- i am nauseous
+- i am nervous
+- nervousness
+- i'm sweating a lot
+- i can't sleep
+- i can't concentrate
+- no concentration
+- no sleep
+- very worried
+- very high heart rate
+- my heart is beating too fast
+- i am under a lot of stress
+- i am stressed out
+- panic attack
+- i am stressed
+- i can't sleep properly
+- i am distracted
+
+## intent:mood_bad
+- ...
+- ..
+- k.
+- screw it
+- can't handle this
+- piss off
+- get lost
+- leave me alone
+- help me
+
+## intent:joke
+- tell me a joke
+- joke
+- i would like to listen to a joke
+- cheer me up with a joke
+
+## intent:img
+- show me a picture
+- i want an image
+- img
+- i would like to see to a nice pic
+- cheer me up with a image
+- pic
+- picture
+
+## intent:song
+- play a song
+- song
+- music
+- play some music
+
+## intent:quote
+- say something to cheer me up
+- quote
+- quote me something cheerful
+- make my day
+
+
+## intent:mentalHealth
+- how to treat mental health symptoms?
+- how to make my mental health better?
+- suggest me some steps to be mentally helthy.
+- what can i do to be mentally strong?
+- steps to stay mentally fit.
+
+## intent:findHelp
+- fetch psychologist near me
+- i want to go to therapy
+- find me a doctor
+- therapy
+- Psychiatry
+- Psychiologist
+- i am mentally unstable
+- help me
+- arrange me a therapy session
+- book me a nearest theraphy session
+- arrange a meeting with a therapist
+
+## intent:out_of_scope
+- a wood chuck can't chuck any kind of wood
+- a wood chuck can't chuck wood
+- are you wearing anything?
+- can i arrange a taxi
+- can i book a taxi?
+- can i order a pizza?
+- give quiche a chance
+- how much wood could a wood chuck chuck if a wood chuck would chuck wood?
+- i am heavy weapons guy and this is my weapon
+- i know kung-fu
+- i need a taxi
+- i want a pepperoni pizza
+- i want to order a pizza
+- i'd like a pizza please
+- i'm all out of bubblegum
+- i'm asking you to marry me
+- it's an albany expression
+- marry me
+- now i have a machine gun ho-ho-ho!
+- please marry me
+- tell me what you're wearing?
+- trial by stone!
+- what are you wearing?
+- will you marry me?
+- you come to me on the day of my daughter's wedding
+- you don't win friends with salad
+- you're going to need a bigger boat
+- Wie fange ich mit Rasa an?
+- hilf mir beim start
+- tschüssikowski
+- ¿Qué pasa?
+- ça va ?
+- como te llamas
+- wer bist Du?
+- como inicio en rasa
+- come stai?
+- como estas
+- de donde eres
+- de que lugar eres?
+- epdi iruka
+- eres humana
+- kalhmera sara ti kaneis
+- kannst du auch deutsch?
+- oui je besoine de l'aide
+- que puedes hacer?
+- tu parles francais?
+- tudo bom
+- tu pagal
+- kannst du mir helfen
+- tu kaisi he
+- こにちは
+- 日本語分かる？
+- chào
+- 你好
+- I'm speaking a non-english language.
+- 呵呵
+- 我该如何使用
+- 你懂中文吗？
+- 您好
+- 你叫什么名字
+- 你是谁
+- 中文
+- kya hindi me bat kar sakate ho
+- Dumme sara
+- αστεία λές
+- rasa codigo abierto
+- 卧槽
+- intent:out_of_scope/other
+- I am asking you an out of scope question
+- 4 + 2 = ?
+- After registration I see that I have an available balance of 0.00000000. What does this balance represent?
+- Are you ready?
+- But you're an english site :(
+- Can I ask you questions first?
+- Can I get a hamburger?
+- Can YouTube talk?
+- Can you call me back ?
+- Can you give me your datacenter's password
+- Can you give me your datacenter's password?
+- Can you make sandwiches?
+- Can you please send me an uber
+- Do I have to accept?
+- Do you know Kevin Pelton
+- Find nearest pizzahut
+- Have we met before?
+- HomeBase is advertised as a community. Is there a way to interact with other members of the community?
+- How long does it take to set up a Rasa bot?
+- I already told you! I'm a shitmuncher
+- I am User
+- I am an opioid addic
+- I am an opioid addict
+- I am hungry
+- I am trying to build one, and did some research before, but I have not do hand-on work yet
+- I can barely see this white text on light gray background ...
+- I changed my mind
+- I have installed it
+- I ned a GP in 94301
+- I need a GP in 94301
+- I need a girl friend!
+- I need to eat cake
+- I wan to buy a plane
+- I wanna marry you
+- I want a new laptop
+- I want book a hotel
+- I want french cuisine
+- I want pizza
+- I want to order pizza
+- I want to use pipe
+- I will check
+- I'm a shitmuncher
+- Is Rasa really smart?
+- Is this Goal-Oriented Chatbot?
+- Is today saturday?
+- Mail me the guide
+- Make me a sandwich
+- NLW
+- Nice name
+- Now?
+- Pizza bot
+- Recharge
+- SEL ME SOMETHING
+- The Try it out is not working
+- The weather is good
+- Today
+- Try it out broken
+- What day is it today?
+- What did you eat yesterday?
+- What do you prefer?
+- What is todays date
+- What is your hobbies?
+- What makes you better than a human?
+- What's 1 + 1?
+- What's do YouTube do
+- What's your backend system?
+- Where am I right now?
+- Where am I?
+- Who ?
+- Who are your customers
+- Why don’t you answer?
+- Why is my TRUST score set to 50 after I completed the registration process?
+- Won't you ask me how I am?
+- You'r blue.
+- Kristin, I want to marry you
+- german?
+- a tamed mouse will arrive at your doorstep in the next couple of days
+- aRE YOU SINGLE
+- again?
+- alexa, order 5 tons of natrium chloride
+- and make chicken noises into the phone
+- are the newsletter worth the subscription?
+- are u facebook
+- are u, facebook?
+- are you single?
+- are you dev?
+- are you russian?
+- are you sick
+- are you using Rasa Core and NLU ?
+- are you vegan
+- better than you
+- book a ticket
+- but I just told you that :(
+- but if rasa is open source why do you have a sales team
+- buy one please
+- buy groceries
+- call me father
+- can we keep chatting?
+- can you book dinner
+- can you cheer me up
+- can you cook dinner
+- can you give me a cup of coffee
+- can you help me with the docs?
+- can you help me with your docs
+- can you help me with your docs?
+- can you learn from our conversation?
+- can you speak about politic ?
+- can you understand ?
+- cannot see
+- chgfhgh
+- chinese ok?
+- colder
+- common, just try
+- connect to alexa
+- cr
+- custom service
+- did i break you
+- dinner
+- do you believe in god?
+- do you have a phone number?
+- do you have your photo?
+- do you know me
+- do you know ras
+- do you liek cheese?
+- do you like football
+- do you like movies
+- do you sell vacuum robots?
+- do you want to marry me?
+- docs
+- doctor
+- everything
+- example of a chatbot
+- genocide
+- get me a club mate
+- give me a girl friend
+- give me food
+- go back
+- google?
+- great, I'd like to buy a house
+- hang on let me find it
+- have you ever seen Keith Reilly?
+- help with Alma Abrams
+- help with my life
+- hey little mama let em whisper in your ear
+- hey, I contacted you a couple of days ago but didn't get any response, any news?
+- how
+- how about NYC
+- how are Alicia Jackson's cats doing?
+- how are the kids
+- how can i get them?
+- how can i test this
+- how come you say ok ?
+- how do you learn
+- how good is Rasa
+- how it compares to alexa
+- how long have you been online?
+- how long will the next version will launch?
+- how many lines of codes
+- how much is 10 + 89 ?
+- how much is 10 + 89
+- how to get rasa studio
+- how to go to newyork ?
+- i am hungry
+- i am hungry, what should i do?
+- i am not a developer but need this for business
+- i am qq
+- i can't deal with your request
+- i do not care how are you
+- i hope you will be better
+- i immediately need help with implementing the coolest bot you can imagine
+- i m looking for job
+- i told you already
+- i wanna party
+- i want a non dripping ice cream
+- i want caffe
+- i want food
+- i want good flycam
+- i want more of you in my life!
+- i want pizza
+- i want pizza!!
+- i want to book a hotel
+- i want to buy a roomba for my grandson
+- i want to eat
+- i want to find new friends
+- i want to find out what you can build with rasa
+- i want to fly
+- i want to grab lunch
+- i want to know current situtation in pakistan
+- i want to order a pizza
+- i want to see your happy customers
+- i will tame a mouse for you
+- is John Lewis still married to you
+- is it a wasteland full of broken robot parts?
+- is it allow to
+- is rasa a studio?
+- is rasa any good
+- is that any of your business
+- isn't the newsletter just spam?
+- it's a pity
+- i´m hungry
+- license
+- ljljl
+- lunch
+- lunch??
+- machine learning
+- mail me the steps
+- mascot means?
+- more
+- mountain
+- my name k
+- no wait go back i want a dripping ice cream but a cone that catches it so you can drink the ice cream later
+- offer me lunch
+- oh my god, not again!
+- oh wait i gave you my work email address can i change it?
+- ok one then
+- on wiche nlp based system are you build?
+- only that?
+- order good
+- order pizza
+- personal or work?
+- pizza
+- please help with my ice cream it's dripping
+- please hjave lunchj
+- please hurry, i have deadline in two weeks to deliver the bot it is for very big company
+- please play music
+- rasa topics
+- really? you're so touchy?
+- refresh
+- region with no. of records
+- remember my name
+- search wikipedia
+- shitmuncher
+- show me a picture of a chicken
+- silly bot
+- sing me a song
+- so, I'm helping right now to training you?
+- some thing else
+- sorry, i cannot rephrase
+- sudo make me a sandwich
+- tell me about yourself
+- tell me more about next best action
+- that doesn't sound like a joke
+- that link doesn't work!
+- the one that is better than you
+- tricked ya
+- turn off my stove
+- umm
+- wait a bit i am still reading
+- what about wheather
+- what are contextual AI assistants and how different are they from chatbots?
+- what are you doing now?
+- what are your uses for universities
+- what did you eat for lunch?
+- what do oyu think about siri?
+- what do you think abou siri?
+- what do you think about Stanley Ramirez?
+- what do you think of alexa
+- what does your soul feel my friend
+- what doing
+- what else?
+- what films do you like
+- what i do after cd starter-pack-rasa-stack?
+- what is a discourse?
+- what is a mascot
+- what is adlingo
+- what is differance between bot and mascot?
+- what is evolution ?
+- what is google rcs
+- what is machine learning
+- what is nice?
+- what is the capital of delhi
+- what is the capital of india
+- what is the current petrol price
+- what is the day ?
+- what is the real use case where we can use this one
+- what is your address?
+- what is your purpose
+- what lnu mean?
+- what the latest news ?
+- what you ate today?
+- what's 5 + 5
+- what's a newsletter?
+- what's gingerale
+- what's your wife doing this weekend
+- what?
+- whats that
+- whats the sign
+- when is the next train is coming?
+- where do i get install files for mac?
+- where is Oslo?
+- where is mexico?
+- wheres the party?
+- which city are you talking about?
+- which email
+- which email should i send to ?
+- which file is created first while developing chat bot
+- which is the LNU asynchronism ?
+- which kind
+- who are the engineers at rasa?
+- who are they?
+- who is Sharon Zeches
+- who is the MD of samsung bangalore ?
+- who is the president of india ?
+- who is your favourite robot?
+- who let the dog out
+- who was hitler
+- who will anser my email?
+- who's Bill Gates?
+- whta you think about gdpr?
+- why do you need that?
+- why its called rasa ?
+- will u kill me
+- will u kill me?
+- winter is already leaving
+- with you recommend me?
+- would you like some water
+- yeah, my dog was drinking a couple of litres of water per day and tried drinking the swimming pool
+- you already have that
+- you can learn how to make a coffe
+- you have children?
+- you have job opening
+- you lock sweety
+- you should learn to count
+- you will know it from the single red rose it carries between its teeth
+- you're a woman
+- ı am learning python
+- CALL THE POLICE
+- tertyryutyi
+- wsdrcftvgybhnj
+- why sky is blue?
+- what kind of bird are you?
+- contextua
+- contextual
+- talk to me about voulette
+- voulette voulette
+- Do you have a demo?
+- Cars
+- please voulette
+- Out of scope question.
+- i need money
+- no, i need cash, money! Do you have it ?
+- the beatles
+- Hi i want to go palghar
+- I want to go palghar
+- your contry name
+- you girl
+- gsaf
+- expert of rasa
+- i want play ball
+- flight catch up
+- how do you like your coffee
+- Can you get analytics on who I'm chatting with when I use Rasa
+- where do i type in commandy
+- where to type in commands
+- kiss me
+- you have to
+- what type of bot?
+- sfasd
+- asdkjasdhjkasd
+- j bhbhj
+- eshdtjfjfyk
+- drhdtjfjfyj
+- sudo reboot
+- asdfgasd
+- asdfgasdas
+
+## intent:smalltalk_human
+- am a talking with a bot?
+- am i speaking to a bot?
+- am i talking to a bot?
+- am i talking to a human?
+- am i talking to a person?
+- am i talking to a real person?
+- am i talking to a robot?
+- are you a human?
+- are you a real person?
+- are you real?
+- can i contact a human being?
+- i don't want to speak with a bot
+- i don't want to talk
+- i don't want to talk to a chatbot
+- i don't want to talk with a chatbot
+- i'd like to speak to a person
+- is this a person?
+- is this a real person or a bot?
+- who am i talking to?
+- you real?
+
+## intent:faq_distancing
+- am i going into quarantine?
+- are there guidelines for how to self-isolate?
+- can i go for a walk?
+- can i still go outside?
+- can i still travel to work?
+- can i walk somewhere?
+- do i have to avoid going outside?
+- do i have to avoid people?
+- do i have to isolate?
+- do i have to stay away from people?
+- do i have to stay inside?
+- for how long do i need to stay at home?
+- for what reasons can i still go outside?
+- for what reasons can i still travel?
+- how do i avoid people?
+- how do i self isolate
+- how do i socially distance
+- how does quarantine work?
+- how does social distancing work?
+- how far apart should i stay for social distancing?
+- how long do i have to self-isolate for?
+- how long do i have to stay inside
+- how will social distancing help?
+- should i stay away from people?
+- what amount of time do i have to self-isolate for?
+- what are the guidelines for a lockdown?
+- what are the guidelines for isolating?
+- what are the guidelines for social-distancing
+- what counts as essential travel?
+- what do i have to self-isolate for?
+- what does social distancing mean?
+- what essential travel can i still do?
+- what if i want to go for a walk
+- what is essential travel?
+- what is quarantine?
+- what is self-isolation
+- what is social distancing
+- when should i stay in isolation?
+- who doesn't need to stay at home?
+- who needs to stay at home?
+- why do i have to avoid going outside?
+- why do i have to avoid people?
+- why do i have to stay inside?
+- why does social distancing help?
+- why should i isolate
+- why should i quarantine myself?
+- why should most people isolate?
+- will quarantine work?
+
+## intent:faq_symptoms
+- am i going to die because of covid-19?
+- will i die because of covid-19?
+- what is the mortality rate of COVID-19?
+- how many people die of covid 19 on average?
+- what is the death rate of covid 19?
+- am i going to need hospital treatment?
+- are aches a symptom?
+- are the symptoms serious?
+- can i still have it but have no symptoms?
+- can people die from contacting covid-19?
+- can people die from contracting covid-19?
+- can people die from coronavirus?
+- can people die from this?
+- can there be complications from covid-19 symptoms?
+- can you be infected and not show any symptoms?
+- can you tell me what the symptoms are?
+- could i be carrying coronavirus if i don't have symptoms?
+- does everyone have symptoms?
+- how badly should i be coughing?
+- how can i identify the symptoms of corona?
+- how can i tell if i have corona virus?
+- how do i know i have covid-19?
+- how do i know i might be a carrier?
+- how do i know i might have it?
+- how do i know if i have a high temperature?
+- how do i know if i have it?
+- how do i know if i need hospital treatment?
+- how do i know if i'm a carrier of covid-19?
+- how do i know if i've caught coronavirus?
+- how do i know if i've caught it?
+- how high does my fever have to be for me to go to hospital?
+- how high is a fever?
+- how is your body affected by corona?
+- how long do i have to be sick for before i can go to a clinic?
+- how long should i have a fever for?
+- how severe do my symptoms have to be before i go to hospital?
+- how would my body feel if i caught the virus?
+- i have a fever, do i have corona?
+- i'm coughing, what should i do?
+- is a symptom?
+- is coughing a symptom of the disease?
+- is joint pain a symptom?
+- should i go to a health centre if i have symptoms?
+- what are the signs and symptoms?
+- what are the signs of corona?
+- what are the signs of covid-19?
+- what are the signs?
+- what are the symptoms?
+- what counts as a high temperature?
+- what do aches and pains mean?
+- what do the symptoms look like?
+- what does a high temperature feel like?
+- what does asymptomatic mean?
+- what does dry cough mean?
+- what does having corona feel like?
+- what does having corona virus feel like?
+- what does having the virus feel like?
+- what does it mean if i'm coughing?
+- what does it mean to be asymptomatic?
+- what does persistent cough mean?
+- what does the virus do to your body?
+- what does this virus do to the body?
+- what is a dry cough?
+- what is a fever?
+- what is a high temperatures?
+- what is an asymptomatic carrier?
+- what is different about a dry cough?
+- what should i do if i think i have it?
+- what should i do if i think i might have corona virus?
+- what signs of covid-19 should i look for?
+- what temperature is a fever?
+- when do i need to go to a clinic?
+- when is a cough persistent?
+- when should i go to hospital?
+- when should i go to the emergency room?
+- What Happens If i get Coronavirus?
+- What does Coronavirus do?
+- How does human body behave if i get coronavirus?
+- How long does it take after exposure to COVID-19 to develop symptoms?
+- How long does it take for COVID-19 to effect a human body?
+- I am infected with COVID-19.When will I start feeling the symptoms?
+
+## intent:faq_vaccine
+- am i immune once i've been vaccinated?
+- are inoculations available?
+- are they researching vaccines?
+- are they working on vaccines?
+- can covid be cured?
+- can i be vaccinated?
+- can inoculation protect you from coronavirus?
+- can researching make a vaccine?
+- can vaccines protect you from corona?
+- can you be inoculated against the virus?
+- can you be inoculated?
+- can you be vaccinated to protect you from covid-19?
+- can you be vaccinated?
+- can you get vaccinated?
+- how can i be vaccinated?
+- how does vaccine research work
+- how long will it take to develop a vaccine?
+- how long will it take to develop inoculation?
+- how long will it take to research a vaccine?
+- is a vaccine being developed?
+- is there a cure?
+- is there a vaccine against coronavirus?
+- is there a cure for covid-19?
+- what does herd immunity mean?
+- what is herd immunity?
+- what is inoculation?
+- when can we expected a vaccine?
+- when will inoculations be available?
+- Is hcq effective against covid-19?
+- does hydroxychloroquine cure coronovirus?
+- can chlorine be used to cure covid-19?
+- are antibodies effective against covid-19?
+- What is WHO’s view of ongoing prophylaxis treatments followed in some countries, which include the use of hydroxychloroquine?
+- What is WHO's view on use of Hydroxychloroquine for COVID-19 affected patients?
+- Does WHO approve of using hydroxychloroquine for the treatment of COVID-19?
+- Why was the use of hydroxychloroquine temporarily suspended in the Solidarity Trial?
+- Why was hydroxychloroquine banned for the treatment of COVID-19?
+- What are the side-effects of Hydroxychloroquine?
+- Is hydroxychloroquine effective against COVID-19?
+- Can hydroxychloroquine be used to treat COVID-19?
+- Can hydroxychloroquine be used to prevent the spread of COVID-19?
+
+## intent:on_healthcareworkers11
+- Are specialized or referral hospitals required for patients with suspected or confirmed 2019-nCoV infection when hospitalization is needed?
+- Is there a special hospital/medical center for COVID-19 treatment?
+- I have COVID-19.Suggest me a hospital.
+- What are the features a good COVID-19 hospital/medical center?
+- How can I choose the best COVID-19 hospital?
+- what are the specialities of a covid 19 hospital?
+- Suggest me a covid 19 hospital.
+- Show me the nearest covid 19 hospital.
+- where can i find a covid 19 hospital.
+- where can i get covid 19 treatment?
+- where is the nearest covid 19 hospital?
+
+## intent:hcq4
+- What is the Solidarity Trial?
+- What is the meaning of Solidarity Trail?
+- Define Soliditary Trail
+- what is the importance of solidarity trails?
+- what is the job of solidarity trial
+- how a solidarity trail works
+- give me some information on solidarity trails
+- can you expain me solidarity trail?
+- explain solidarity trail
+
+## intent:faq_vulnerable
+- am i more vulnerable if i have cancer?
+- are children at risk of coronavirus?
+- are children vulnerable to corona virus?
+- are my dogs at risk?
+- can cats get the virus?
+- can children get coronavirus?
+- can children get it?
+- can dogs get the virus?
+- can my baby get coronavirus?
+- can my cat get it?
+- can pets get the virus?
+- can your age affect the severity of the illness?
+- can your age affect the severity?
+- does my age matter?
+- does respiratory disease increase my risk?
+- how many years old are those at risk?
+- how old are those likely to have a severe reaction?
+- how what age group is most at risk?
+- i am years old
+- i am years old, am i at risk?
+- i have asthma, am i more at risk?
+- i'm concerned about my parents
+- i'm worried about my grand parents
+- should i be worried about my parents?
+- should i be worried if i'm expecting?
+- what age group is most vulnerable?
+- what age range is most at risk?
+- what are the high risk groups?
+- what are ventilators for?
+- what groups are vulnerable?
+- what if i'm high risk?
+- what if i'm years old?
+- what if someone is diabetic?
+- what people are most likely to experience severe symptoms?
+- who is most at risk of severe symptoms?
+- who is most likely to need hospital treatment?
+- who is most likely to need to go to the hospital?
+- who might need intensive care?
+- who might need ventilators?
+- who should avoid contact during the outbreak?
+- who should avoid contact?
+- who should i avoid contact with during the outbreak?
+- why are older age people more at risk from this illness?
+- why are symptoms more severe depending on how old i am?
+- why are symptoms more severe in some people?
+- why do some people need intensive care?
+- why do we need ventilators?
+- why does age affect the severity?
+- why does my age matter?
+- Can adolescents catch COVID-19?
+- Is it possible for young people within the age limit 10 to 19 years old get affected by COVID-19?
+- i am 10 years old.Should i be worried of COVID-19?
+- Can adolescents spread COVID-19 to other people even if they have mild or no symptoms?
+- Is it possible young people within the age limit 10 to 19 years old spread COVID-19?
+- Since there are few known cases of adolescents getting seriously ill with COVID-19, should I go to a health facility if I develop symptoms of the disease?
+- Should adolescents with symptoms of the virus visit a hospial?
+- I am young.I have symptoms of COVID-19.Should I visit a hospital?
+- I am an adoloscent.I have symptoms of COVID-19.Should I visit a hospital?
+- I have arthritis.
+- I have cancer.Should I be worried of COVID-19 situation?
+- I have diabetes.Should I be worried of COVID-19 situation?
+- I have Alzheimer disease.Should I be worried of COVID-19 situation?
+- I have dementia.Should I be worried of COVID-19 situation?
+- I have COPD.Should I be worried of COVID-19 situation?
+- I have Crohn disease.Should I be worried of COVID-19 situation?
+- I have Cystic fibrosis.Should I be worried of COVID-19 situation?
+- I have Epilepsy.Should I be worried of COVID-19 situation?
+- I have HIV/AIDS.Should I be worried of COVID-19 situation?
+- I have Heart disease.Should I be worried of COVID-19 situation?
+- I have Multiple sclerosis.Should I be worried of COVID-19 situation?
+- I have Parkinson disease.Should I be worried of COVID-19 situation?
+- I have Tuberculosis/TB.Should I be worried of COVID-19 situation?
+- I was due to get vaccinated for HPV,meningitis or tetanus, but immunization services have been disrupted. Should I be concerned?- I was due to get vaccinated for HPV,meningitis or tetanus, but immunization services have been disrupted. Should I be concerned?
+- Is there a problem if I am late to get vaccinated for HPV,meningitis or tetanus?
+- I am not able to get a vaccination for other diseases due to this pandemic.
+- Can I catch COVID-19 from the faeces of someone with the disease?
+- Is there a chance of getting infected of COVID-19 if a person is in contact with the faeces of COVID-19 infected person?
+- Do I get infected COVID-19 if I come in contact the the faeces of infected person?
+- can covid 19 spread from animal faeces?
+- can covid 19 spread from my pet faeces?
+
+## intent:on_pregnancy_and_childbirth
+- Can COVID-19 be passed from a woman to her unborn or newborn baby?
+- Is COVID-19 transmitted from mother to a newborn baby?
+- Will COVID-19 be transmitted from mother to its child in the womb?
+- Is it possible that COVID-19 is spread from a pregnant lady to her unborn child?
+- What care should be available during pregnancy and childbirth?
+- What facilities should be given to pregnant women in this COVID-19 pandemic?
+- How should pregnant women taken care in the COVID-19 pandemic?
+- Do pregnant women with suspected or confirmed COVID-19 need to give birth by caesarean section?
+- Can pregnant women give birth if they have been infected with COVID-19?
+- I have been infected of COVID-19.Can I give birth in this situation?
+- Is giving birth by caesarean section recommended if the woman has COVID-19 infection?
+- Can I touch and hold my newborn baby if I have COVID-19?
+- Can a women be in contact with its new born child?
+- I have COVID-19.Is it safe to hold by new born baby?
+- i'm pregnant, am i at a higher risk?
+
+## intent:on_youth4
+- What should I do if someone in my family gets really ill with COVID-19?
+- What are the precautions to be taken if people in my home gets infected with the virus?
+- The people in my home are infected of COVID-19.
+- My father is infected with COVID-19.
+- My sister is infected with COVID-19.
+- My friend is infected with COVID-19.What should I do?
+- Should I help my parents if they are infected with COVID-19?
+- My neighbours have COVID-19.
+- What should I do if I have COVID-19 symptoms and when should I seek medical care?
+- What help should I seek if I think I have been infected with COVID-19?
+- I have symptoms of COVID-19.Should I visit the hospital? 
+- I think I have COVID-19.
+- How should visit a hospital?
+- What should I do if I have come in close contact with someone who has COVID-19?
+- I was in contact with the person who has COVID-19.
+- I came in contact with person who has coronavirus.What can I do?
+- I think I have COVID-19.Should I visit the hospital?
+- I think I came in contact with person who has coronavirus.Should I go to the hospital?
+- What should I do if I have no symptoms, but I think I have been exposed to COVID-19? What does it mean to self-quarantine?
+- I have no symptoms.But I feel I may have been in contact with a person with COVID-19.
+- What is the meaning of self-quarantine?
+- How to self-quarantine?
+
+
+## intent:faq_testing
+- are tests available?
+- are there tests to detect corona?
+- can i have a test even if i don't have symptoms?
+- can i have a test if i think i have coronavirus?
+- can i have a test?
+- how are they testing people for covid19?
+- how can i get tested?
+- how do they test for covid-19?
+- how do they test someone for covid-19?
+- how does testing for corona work?
+- how does testing work?
+- i think i have coronavirus, should i get a test?
+- i think i've got it, should i get a test?
+- is there any testing going on?
+- when should i get a test?
+- when will testing be available?
+- where are test available?
+- who are they testing for corona virus right now?
+- who can get tested?
+
+## intent:faq_suppy
+- are the supermarkets going to run out of food?
+- are the supermarkets going to run out of supplies?
+- can i go to the shops for
+- can i go to the shops for that?
+- could there be shortages?
+- do i need to buy anything?
+- do i need to buy more
+- do i need to buy more toilet paper
+- do people need to stockpile?
+- i need to buy
+- i need to buy can i go to the shops for that?
+- i need to buy more
+- i need to buy more medicine
+- i need to buy more soap
+- i'm worried about supply chains
+- should i stockpile?
+- should we be worried about food shortages?
+- what extra supplies to do i need
+- what food should i be stocking up?
+- what if i need more soap?
+- what if i run out of soap and need to buy more?
+- what is panic buying
+- what kind of food should i buy?
+- what should i do if the supermarkets are empty?
+- what should i do if there's a shortage?
+- what should i stock up on?
+- what supplies might there be a shortage of?
+- what supplies should i stock up on?
+- what things should i buy
+- what type of food is good for stocking up?
+- why are people panic-buying?
+- will shortages be a problem?
+- will supply chains be affected?
+
+## intent:faq_flu
+- are the symptoms like influenza?
+- how does corona virus compare with a flu outbreak?
+- how does covid-19 compare with influenza?
+- how does it compare to a cold?
+- how is corona different from the flu?
+- how is covid-19 different from the flu
+- how is this different from the flu
+- is corona a flu?
+- is corona the same as swine flu?
+- is coronavirus just a bad cold?
+- is coronavirus like influenza?
+- is covid a kind of influenza?
+- is covid19 a kind of influenza?
+- is covid-19 like swine flu?
+- is it like a cold
+- is the virus a kind of influenza?
+- is this caused by h1n1?
+- is this like the h1n1 outbreak?
+- is this like the spanish flu?
+- is this similar to h1n1?
+- is this similar to swine flu?
+- isn't it just a cold?
+- isn't it just a really bad cold?
+
+## intent:faq_masks
+- can a mask protect me?
+- can covering my face protect me?
+- do i need to cover my face?
+- do i need to start covering my face?
+- do mask help?
+- do masks help stop the spread?
+- do masks help to stop covid 19?
+- do masks help to stop the spread of corona?
+- how can a mask help?
+- should i cover my face with a mask?
+- should i cover my face?
+- what is the right kind of mask to use?
+- what kind of mask should i use?
+- what type of face-mask do i need?
+- what type of mask should i use?
+- who needs to use face masks?
+- why are people using face masks?
+- why is everyone wearing face-masks?
+- will a mask protect me from the virus
+- will it help to cover my face?
+- are masks reusable?
+- can i wear reusable masks?
+- how are masks disposed?
+- Can disposable medical face masks be sterilized and reused?
+- Can masks be reused?
+- Can I wash/sterilize my ask and reuse?
+- How can I dispose my used masks?
+- I want to dispose my used face-mask.Suggest the steps to properly dispose it.
+- Does WHO recommend routine wearing masks for healthy people during the 2019 nCoV outbreak?
+- Should healthy persons wear masks?
+- I don't have COVID-19.Should I wear mask?
+- Should I wear a mask at home?
+- Is it necessary to be wearing a mask all the time during the COVID-19 pandemic?
+
+## intent:faq_timescale
+- can a virus change over time?
+- can covid-19 mutate over time?
+- could coronavirus come back in the winter?
+- could covid19 return in the autumn?
+- could this still be going on next year?
+- how does a pandemic progress?
+- how does a viral outbreak progress?
+- how does an outbreak progress?
+- how long does a pandemic last?
+- how long does it take for a pandemic to end?
+- how long has the pandemic been going on
+- how long has this been going on for?
+- how long will a pandemic last?
+- how long will the be a pandemic?
+- how long will the coronavirus outbreak last?
+- how long will this outbreak last?
+- how many months can we expect this to last?
+- how many months has coronavirus been going on for?
+- how many months will this continue?
+- how many months will this pandemic last?
+- how will covid-19 progress over time?
+- how will the virus change over time?
+- how will the virus mutate?
+- how will things have changes in a year?
+- is a virus better in summer?
+- is corona worse in winter?
+- what will be happening in a months time
+- what will be happening in a week
+- what will happen next year?
+- when can we go back to normal?
+- when will life go back to normal?
+- when will things go back to normal?
+- when will this be over?
+- will corona ever go away?
+- will it get worse again in the autumn?
+- will the outbreak be over soon?
+- will the pandemic last years?
+- will the situation change in a few weeks?
+- will the situation have changed in a month?
+- will the virus go away?
+- will things be different in a month?
+- will things be different next week?
+- will things improve in the spring?
+- will things improve in the summer?
+- will this continue into autumn?
+- will this continue into next winter?
+- will this continue into next year
+- When will this pandemic end so I can go back to school and meet up with my friends?
+- When can I go back to school?
+- When will this virus clear the face of earth?
+- When will I be able to have fun with all my friends again?
+- I want to meet my friends and have fun
+
+## intent:faq_spread
+- can coronavirus spread by coughing?
+- can coronavirus survive on skin?
+- can covid get into my eyes?
+- can sneezing spread coronavirus?
+- can you catch corona from an unclean surface?
+- can you catch coronavirus from another person?
+- can you catch the virus from dirty surfaces?
+- could i pass corona virus onto someone else?
+- does coughing spread corona?
+- does coughing spread covid-19?
+- does does a virus spread?
+- how can i avoid covid-19?
+- how can i avoid getting coronavirus?
+- how can i protect myself?
+- how contagious is it?
+- how did corona become so widespread?
+- how did covid-19 become so widespread?
+- how did it become so widespread?
+- how did this disease become so widespread?
+- how do i catch corona?
+- how do viruses become widespread?
+- how do we stop people getting coronavirus?
+- how do we stop people getting it?
+- how do we stop people getting sick?
+- how do you catch coronavirus
+- how do you catch it?
+- how does covid 19 spread?
+- how does covid pass from person to person?
+- how does covid spread from person to person?
+- how does covid-19 spread between between?
+- how does covid-19 spread from one person to another?
+- how does covid-19 spread?
+- how does the virus spread
+- how is it so contagious?
+- is covid 19 contagious?
+- how would i catch the virus from someone else?
+- i want to avoid getting covid, what should i do?
+- is corona virus contagious?
+- is it contagious?
+- is this disease very contagious?
+- what should i do to avoid getting coronavirus?
+- what should i do to avoid getting covid?
+- what should i do to protect myself from catching covid19?
+- what should i do to protect myself?
+- why can't i touch my face with my hands?
+- why do you have to clean surfaces?
+- why is skin-on-skin contact to be avoided?
+- why shouldn't i touch my eyes?
+- why shouldn't i touch my face?
+- what happens if i get corona
+- Why does WHO recommend contact and droplet precautions and not routine use of airborne precautions for healthcare workers providing care to patients with suspected/confirmed 2019-nCoV infection?
+- Why is it necessary to take precautions based on contact and droplet spread,rather than airborne?
+- Is COVID-19 airborne?
+- Does COVID-19 spread through air as a medium like most of the other viruses?
+- does covid 19 spread through air?
+
+## intent:mass_gathering
+- How many people cannot gather in a same place during the COVID-19 pandemic?
+- Does WHO recommend that all international mass gatherings be cancelled because of COVID-19?
+- Should all mass gatherings be banned during the COVID-19 pandemic?
+- Is gathering in groups for meetings against the law?
+- What factors should organizers and health authorities look at when assessing whether the risks are acceptable or not for mass gathering?
+- What are the factors to decide to promote mass gathering or not?
+- how should a mass gathering be organized?
+- how should meetings be orgainzed in COVID-19 situations?
+- If we go ahead with an international mass gathering, what can we do to reduce the risk of participants catching COVID-19?
+- How to reduce the spread of COVID-19 in a mass gathering?
+- What are the preventive measures in spread of COVID-19 in mass gatherings?
+- How to reduce the risk of COVID-19 in mass gatherings?
+- Give some information about managing the health risks due to mass gathering.
+- What should be the criteria for excluding an athlete or other accredited participant from competing?
+- How should an athlete treated before rejoining sports?
+- How should sports be organised?
+- How should a player be treated before playing international games?
+- Should event organizers arrange temperature screening at venues beyond national government requirements for point of entry (PoE)?
+- Should people be screened for COVID-19 before a mass event at the entrance?
+- Should the temperature be checked using temperature screening before entering a mass gathering?
+- Is temperature test effective to detect COVID-19 detection?
+- Is temperature screening effective to detect COVID-19?
+- Should event organizers provide COVID-19 testing?
+- Is it necessary for event organizers to provide a COVID-19 test to participants?
+- Should we test for COVID-19 before attending a mass event?
+- Are there additional safeguards event organizers can implement or recommend to athletes/officials/visitors in the context of COVID-19?
+- What are the requirements to orgainse a mass event?
+- I want to organize a mass gathering.
+- I want to organise a function at my home.
+- I want to organize a marriage at my place.
+- can temperature screening prevent the spread of covid 19?
+- is temperature testing effective against the spread of covid 19?
+
+## intent:on_youth5
+- Is it safe to have sex at this time?
+- Is covid 19 sexually transmitted?
+- What self care actions can I take to protect my sexual and reproductive health?
+- Suggest some steps to take care of my sexual health in this COVID-19 pandemic.
+- does covid 19 transfer from having sex?
+
+## intent:faq_handwashing
+- can soap help keep the virus off my hands?
+- can soap help with corona virus?
+- do i need to use hand sanitiser?
+- how does hand-sanitiser work?
+- how does soap help keep the virus away?
+- how long should i hand-wash for?
+- how often should i wash my hands
+- how should i wash my hands
+- should i use soap or hand sanitiser?
+- what amount of alcohol is needed in hand gel?
+- what are good methods for handwashing?
+- what are the handwashing techniques
+- what are the hand-washing techniques?
+- what are the instructions for hand-washing
+- what are the techniques for hand washing?
+- what is important about hand-washing?
+- what is the guidance for handwashing
+- what strength percentage of alcohol is required for hand gel to work?
+- when should i wash my hands
+- why do i need to use soap?
+- why do i need to wash my hands
+- why does soap help with containing covid 19?
+- should i use hand-sanitizers?
+- what type of chemicals can be used for disinfection?
+- how to disinfect surfaces?
+- how do i clean my shop?
+- how to clean my home?
+- how long can the virus remain on surfaces?
+- how long does coronavirus stay on surfaces?
+- How long the 2019-nCoV can survive on a dry surface?
+- What is the lifespan of novel Coronavirus on rough surfaces?
+- How long will it take for novel coronavirus to die if not have contacted on the surface?
+- What factors effect the survival of novel coronavirus on dry rough surfaces?
+- how long does it stay on skin?
+- how long does the virus stay on your hands face?
+- how long does the virus stay on your hands?
+
+## intent:faq_curve
+- can we reduce the number of cases?
+- can we prevent spikes in the infection rate?
+- how can you slow the infection?
+- how do we flatten the curve
+- how do we prevent spikes in the number of infected people?
+- how do we reduce the number of cases?
+- how does health care capacity relate to the curve?
+- how does healthcare capacity relate to the curve
+- how fast can it spread?
+- how fast is covid-19 spreading?
+- how quickly can it spread?
+- how quickly could corona virus spread?
+- how quickly could the health service be overwhelmed?
+- how quickly could this get out of control?
+- how quickly is it spreading?
+- how quickly should coronavirus spread?
+- how quickly will it spread?
+- reducing the frequency of cases
+- slow the rate of infection
+- what are spikes
+- what are spikes and why do they happen?
+- what are spikes and why should we try to slow them?
+- what does a spike in cases look like?
+- what does it mean the flatten the curve
+- what happens when there's a surge in cases?
+- what happens when you reduce the number of cases?
+- what is a fast spread?
+- what is a slow spread?
+- what is flattening the curve
+- what is healthcare system capacity
+- what is infection rate
+- what is the curve of cases
+- what is the difference between a fast spread and a slow spread?
+- what is the difference between and fast and slow pandemic?
+- when do spikes in infection rate occur?
+- why are there spikes in the frequency of cases
+- why do infections suddenly spike
+- why do you need to slow the infection
+- why should we try to slow the infection?
+
+## intent:faq_whatisit
+- how are viruses formed?
+- how are viruses structured?
+- how do viruses behave?
+- how do viruses happen?
+- how do viruses work?
+- how does a pandemic work?
+- how does an epidemic work?
+- how does covid work?
+- how is a virus structured?
+- how is the corona virus structured?
+- what is covid 19?
+- what is coronavirus?
+- does it always have symptoms?
+- is it asymptomatic?
+- is covid 19 asymptomatic?
+- is covid-19 a virus?
+- what are corona viruses?
+- what are viruses?
+- what do they mean by "pandemic"
+- what do viruses look like?
+- what does "pandemic" mean?
+- what does a virus look like?
+- what does an outbreak mean?
+- what does covid mean?
+- what does covid stand for?
+- what does covid19 mean?
+- what does covid-19 mean?
+- what does covid19 stand for?
+- what does it mean if we have a pandemic?
+- what does it mean if we have an outbreak?
+- what does outbreak mean?
+- what is a pandemic?
+- what is a virus?
+- what is an epidemic?
+- what is corona?
+- what is covid-19
+- what is pandemic
+- what is the corona virus?
+- what is the difference between and epidemic and a pandemic?
+- what is the full name of coronavirus?
+- what is the full name of covid-19?
+- what is the full name of the virus?
+- what is the structure of a virus?
+- what is the structure of coronavirus
+- what kind of disease is corona?
+- what kind of illness is corona virus?
+- why is it called corona virus?
+ 
+## intent:faq_origin
+- how did it start?
+- how did the covid outbreak start?
+- how did the outbreak start?
+- what caused corona virus?
+- what caused covid-19
+- what caused covid-19 to happen?
+- what caused the corona outbreak?
+- when did it start?
+- when did the outbreak start?
+- when was corona virus detected?
+- when was coronavirus identified?
+- when was it detected?
+- where did it come from?
+- where did the coronavirus come from?
+- where was the virus first detected?
+- why did corona happen?
+- why did this happen?
+- What is the connection between COVID-19 and animals?
+- Was COVID-19 originated in animals?
+- Is it true that animals were the source for COVID-19? 
+- is bat responsible for covid 19?
+
+## intent:public_advice
+- What are the recommended practices once back home after outdoor activities?
+- What cleaning procedures should be followed once a person returns home from outside?
+- How should a person clean himself once he return home from work?
+- I come home from work.What should I do first? 
+- I am returning home after shopping.
+- How should I clean food items from the grocery store, for example fruit, vegetables or packaged items?
+- What are the precautions taken after buying items from shops before using them?
+- How should items brought from the public cleaned before use?
+- I bought fruits,items,groceries to home from market
+- How to grocery shop safely?
+- Suggest some steps to go to public safely?
+- How I can prevent getting infected with COVID-19 while shopping?
+- I have to go shopping.
+- I have to go to the market.Suggest me some preventive measures against COVID-19.
+- What are the precautions while shopping at shops or supermarkets?
+- How to wash fruits and vegetables?
+- I have bought some fruits and vegetables from market.
+- How to clean vegetables and fruits from shops?
+- Can you suggest me some cleaning methods for vegetables/fruits?
+- what should i do once i return home?
+- how should i prevent myself from covid 19 in public?
+- What are the recommendation regarding disinfection of vehicles, goods and products coming from China or other COVID-19 affected countries?
+- How to clean the vehicles of COVID-19 effected people?
+- How to clean the goods coming from COVID-19 hit places?
+- How are ambulances cleaned from hospitals?
+- I recieved a parcel from a place where COVID-19 cases are high.What should I do? 
+- cleaning of vehicles
+- cleaning of ambulances
+- cleaning of goods
+- cleaning of parcel
+- cleaning of mail
+- cleaning of post
+- online delivery
+
+## intent:faq_status
+- what is the current status
+- give me live count
+- live counter
+- world map counter
+- how many are confirmed cases
+- how many deaths till now
+- give me real time status updates
+- how many have recovered cases
+- give me live stats of corona
+- show me graph of current situation
+- give me live information
+- latest stats updates for corona
+- are there a lot of cases right now?
+- does the country have a lot of cases?
+- does the have a lot of cases?
+- have many people died due to covid-19?
+- how many cases have there been
+- how many cases of corona infection have there been?
+- how many deaths have there been?
+- how many fatalities have there been?
+- how many have died due to coronavirus
+- how many have tested positive?
+- how many people have been infected
+- how many people have tested positive
+- number of cases
+- what is the number of cases
+- what is the present number of deaths
+- what is the present number of fatalities?
+- what is the number of infections?
+- what number have tested positive?
+- what number of people have been infected?
+- what number of people have tested positive?
+
+
+## intent:faq_gloves
+- Are gloves recommended for the community in public spaces to protect against COVID-19, for example when going to the grocery or supermarket?
+- How are gloves helpful in public places like shops?
+- Does wearing gloves help against spread of COVID-19 in the public?
+- Should I wear gloves before going out in the public?
+- Should I wear gloves?
+- Are gloves helpful against the spread of COVID-19?
+- Should I wear hand gloves with masks?
+- are gloves necessary?
+- what are the importance of gloves?
+
+## intent:on_healthcareworkers16
+- Is there a model for setting up an isolation ward and types and products and health requirements?
+- What are the steps to be taken care to set up an isolation ward for COVID-19?
+- How to set up an isolation ward?
+- What are the features of a good isolation ward?
+- how to set up a quarantine center?
+- what is an isolation ward?
+- how are people isolated?
+- how are people quarantined?
+
+## intent:on_healthcareworkers15
+- Are there special procedures for the management of bodies of persons who have died from 2019-nCoV?
+- How should a dead body infected with COVID-19 taken care of?
+- How are dead bodies infected of COVID-19 treated?
+- What are the procedures to be taken care before burying a dead body of a COVID-19 infected person?
+- What are the procedures to be taken care before burning a dead body of a COVID-19 infected person?
+- should the covid 19 dead body be burnt?
+- should the covid 19 dead body be buried?
+- how are final rituals for covid 19 be carried?
+
+## intent:on_healthcareworkers14
+- Is there a special procedure regarding waste produced by patients with suspected or confirmed 2019-nCoV?
+- How should the wastes produced by the COVID-19 patient or used while treating a COVID-19 patient disposed?
+- Suggest the methods to dispose waste produced by a COVID-19 patient.
+- Suggest the methods to dispose waste used to treat a COVID-19 patient.
+- how should waste be disposed?
+- waste management during COVID-19
+
+## intent:on_healthcareworkers9
+- Can patients with suspected and confirmed nCoV infection be cohorted in the same room?
+- Can 2 patients with COVID-19 be treated in a same room?
+- How many patients can be treated in one room of a hospital?
+- How can many patients with COVID-19 be treated in the same room?
+- what are the maximum number of covid 19 patients in one room?
+- what are the minimum number of covid 19 patients in one room?
+- how should a covid 19 hospital room be set up?
+
+## intent:on_healthcareworkers5
+- Are boots, impermeable aprons, or coverall suits required as routine personal protective equipment (PPE) for healthcare workers (HCW) caring for patients with suspected or confirmed 2019-nCoV infection?
+- Are boots, impermeable aprons, or coverall suits suggested to be worn to visit a COVID-19 patient?
+- Are boots, impermeable aprons, or coverall suits a part of PPE kit for doctors?
+- what kits should be given to doctors?
+- what eqipments should be used while treating covid 19 patients?
+- what kits should be given to police officers in covid 19 duty?
+- what is a ppe kit?
+- what safety kit is used while treatment of covid 19 patients?
+- what is a personal protective equipment?
+- what are the previlages of a doctor in COVID-19 duty?
+- what are the previlages of police officers in covid 19 duty?
+- What personal protective equipment (PPE) should be used by healthcare workers (HCW) performing nasopharyngeal (NP) or oropharyngeal (OP) swabs on patients with suspected or confirmed COVID-19?
+- What are the things used by doctors to protect themselves from COVID-19?
+- What are the constituents of the PPE medical kit offered to doctors/nurses/health-care workers?
+- how should people taking swab tests protect themselves from covid 19?
+- how the health care workers should protect themselves from covid 19?
+
+## intent:on_healthcareworkers4
+- Should blood centers routinely screen blood products for COVID-19 virus?
+- What are the precautionary steps to be taken in blood centers?
+- Does COVID-19 spread by coming in contact with the blood of infected people?
+- blood centers
+
+## intent:on_healthcareworkers1
+- How can you clean soiled bedding, towels and linens from patients with COVID-19?
+- What are the cleaning methods in hospitals for COVID-19 patients?
+- How to clean the belongings/things of COVID-19 patients?
+- How can I clean the clothes of COVID-19 patients?
+- Suggest some steps to clean clothes of COVID-19 patients.
+- how to clean the beds of covid 19 patients?
+- how to clean the sheets of covid 19 patient?
+- how to clean the clothes of an infected person?
+- should i throw the clothes of an infected person?
+- should i throw the bed sheets of an infected person?
+
+## intent:on_youth7
+- I am bored staying home. Since I am very unlikely to get severely ill even if I was to get COVID-19, why is it important that I follow the guidelines to prevent transmission such as keeping physical distance from other people?
+- If I don't get sick very often , can I got out and not follow the rules?
+- I am bored.Why should I stay at home?
+- I am bored staying at home.
+- Suggest me some things to do at home.
+- I am sick of lockdown.
+- I don't like lockdowns.
+- Why should I follow the rules?
+- Why should i respect lockdowns?
+- why should i maintain social distancing?
+- i don't fall sick
+- i am healthy
+- i am young.i can't catch covid-19
+
+## intent:on_resource
+- Are the ethical considerations the same for all medical counter measures, including therapeutics, vaccines and personal protective equipment (PPE)?
+- What are the ethics involved in medical countermeasures, including therapeutics, vaccines and personal protective equipment (PPE)?
+- What is the basis for deciding who should have priority access to scarce resources?
+- Who is more important to get COVID-19 resources?
+- How can one decide the priority of access for COVID-19 patients?
+- How should decision-makers make considered ethical judgements about these matters, given the likelihood that there will not be enough of a resource? Who should be involved in decision-making on scarce resources?
+- Who should locate COVID-19 resources?
+- Who should decide the ethical prorities for COVID-19 resources?
+- How should COVID-19 resources be located?
+- How should the ethical prorities for COVID-19 resources be decided?
+- What are the key ethical considerations that governments, vaccine manufacturers and funders should take into account to ensure a fair distribution of vaccines globally?
+- What are the things to be taken care for governments or vaccine manufacterers and funders for distribution of vaccines?
+- How will be vaccines distributed globally?
+- Who will get the vaccine for COVID-19,once invented?
+- Who will get the medicine for COVID-19,once invented?
+- What conclusions can we draw about the fair allocation of scarce resources within countries during the COVID-19 outbreak?
+- What are the priority of resources allocation in countries hit by COVID-19? 
+- How should doctors be treated in this COVID-19 situation?
+- - How should doctors be police officers in covid 19 duty in this COVID-19 situation?
+- How should health-care workers be taken care in this COVID-19 situation?
+- Should young people benefit the COVID-19 resources first?
+- Should old people given more importance to benefit the COVID-19 resources over young people?
+- How should the COVID-19 vaccine developers,researchers treated in this pandemic?
+- What resources should be provided to COVID-19 hit areas?
+- who should be given more priority?
+
+## intent:on_physical_health
+- How do I stay safe while exercising in COVID-19?
+- What are the ways to maintain physical health during this pandemic?
+- Suggest some activities to remain physically healthy during this pandemic.
+- How do I stay active in and around the home during this pandemic?
+- How can I keep myself fit in this pandemic while at home?
+- I want to be physically fit during this pandemic while a home.
+- physically active
+- physically healthy
+- exercise
+- yoga
+- sports
+- games
+- I know there is a risk of getting COVID-19 at the moment, but I feel fine. Can I still play sports?
+- Can I get involved in sports?
+- Can I play games in public?
+- I want to play games outdoors.
+- can i get involved in sports?
+
+## intent:on_youth11
+- Schools are reopening in some areas of my country. Is it safe to go back to school?
+- Is it safe to go to school?
+- I want to return to school.
+- Is it safe to go to colleges?
+- I want to return to colleges.
+- Can colleges reopen?
+- Can school reopen?
+- Can schools have written exams on campus?
+- Can colleges have written exams on campus?
+- Is it okay to resume campus activities in school?
+- Is it okay to resume campus activities in colleges?
+- Can teachers go back to schools to teach?
+- Can teachers go back to colleges to teach?
+- Is it safe for teachers to go teach in schools?
+- Is it safe for teachers to go teach in colleges?
+
+## intent:on_youth19
+- I don’t like the way someone touches me at home and we are both at home all the time because of the pandemic. What should I do?
+- What should I do if someone does things to me at home that I don't like in this pandemic?
+- I get disturbed at home
+- I am troubled at home
+- I am being harrased
+- violence
+- Since my parents stopped going out to work, they have been arguing with each other much more, and in some instances, I have seen one parent harm or hurt the other either verbally or physically. I don’t feel safe at home. What should I do?
+- What should I do if people around me are fighting in this pandemic?
+- What should I be doing if my parents fight at home?
+- My parents argue at home and I don't like it
+
+## intent:on_youth16
+- In the lockdown, I am spending much more time online playing games, socialising and studying. Should I be worried about this?
+- Could online platform during this pandemic affect me?
+- Should I worry that I am not able to socialize in this pandemic?
+- I heard I can be hurt by online contacts. What are my risks and how I can protect myself online.
+- What things should I be aware of , while trying to be online or using internet?
+- What things can put me in trouble on internet?
+- COVID-19 is everywhere in the news, and I am finding it difficult to know what is true and what is false. What should I do?
+- How can I know that the things are true which are on news all over?
+- Where to find true information/news on COVID-19?
+- I want leggit information on COVID-19 ongoings.
+- covid 19 news
+- which news to believe?
+- which news channel is the best?
+
+## intent:on_youth8
+- Some of my friends are not sticking to the rules about physical distancing. What should I do?
+- What should I do if I find someone who are not following social distancing?
+- I see people are not following the rules of social distancing.
+- whom should i complain about not following the rules?
+- my neighbours don't follow rules
+- rules broke
+- rules are not followed
+
+## synonym:rules
+- covid 19 rules
+- preventive measures
+- social distancing
+- physical distancing
+- hygiene
+- hand hygiene
+- clean hands
+- wear masks
+- respiratory hygiene
+
+## synonym:sports
+- games
+- athletics
+
+## synonym:public
+- outside
+- outdoor
+
+## synonym:fruits
+- vehicles
+- vegetables
+- goods
+- parcel
+- online delivery
+- mail
+- post
+- ambulance
+- car
+- bike
+- scooter
+- truck
+
+## synonym:cleaning
+- disinfecting
+- wash
+
+## synonym:child
+- kid
+- daughter
+- son
+- kids
+- children
+- baby
+- babies
+- daughters
+- sons
+
+## synonym:corona
+- coronavirus
+- covid
+- covid-19
+- covid19
+- covid 19
+- virus
+- viral
+- pandemic
+- epidemic
+- outbreak
+- illness
+- disease
+- viruses
+- infection
+- ncov
+- nCOV
+- ncov-19
+- nCOV-19
+- novel coronavirus
+- covid19
+
+## synonym:hospital
+- health centre
+- infirmary
+- medical centre
+- medical institution
+- clinic
+- hospitals
+- health centres
+- infirmaries
+- medical centres
+- medical institutions
+- clinics
+- emergency room
+- emergency
+
+## synonym:illness
+- asthma
+- diabetes
+- asthmatic
+- diabetic
+- hypertension
+- heart
+- heart disease
+- cardiovascular
+- cardiovascular disease
+- respiratory
+- respiratory disease
+- chronic
+- cancer
+- lung
+- lung disease
+- high blood pressure
+- blood pressure
+- aids
+- bp
+- sugar
+
+## synonym:pet
+- animal
+- bird
+- cat
+- dog
+- rabbit
+- fish
+- hamster
+- rat
+- bird
+- guinea-pig
+- goldfish
+- chicken
+- cats
+- dogs
+- rabbits
+- rats
+- birds
+- guinea-pigs
+- chickens
+- pets
+
+## synonym:pregnancy
+- pregnant
+- expecting
+- trimester
+- with child
+
+## synonym:senior
+- elderly
+- elder
+- older
+- retired
+- old
+- pensioners
+- oaps
+- parents
+- grandparents
+- pensioner
+- seniors
+- elders
+- oap
+- parent
+- grandparent
+- mother
+- father
+- grandmother
+- grandfather
+- someone
+- somebody
+- loved
+
+## synonym:hydroxychloroquine
+- HCQ
+- hcq
+- Chlorine
+- chlorine products
+- malaria medicine
+- malaria medications
+
+## synonym:supermarkets
+- markets
+- grocery shops
+- shops
+- public places
+- roads
+- home
+- house
+- stores
+- grocery stores
+
+## synonym:family
+- uncle
+- aunt
+- brother
+- friend
+- sister
+
+## synonym:mass gathering
+- meetings
+- sports
+- party
+- public event
+- rally
+- group
+- events
+- function
+- marriage
+
+## synonym:doctor
+- nurses
+- medical faculty
+- medical staff
+- health care workers
+- covid 19 duty
+- police officers
+- inspectors
+- HCW

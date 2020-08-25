@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Noto Sans JP');
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: honeydew;
+    font-family: 'Noto Sans JP';
+}
+
+body {
+    background-color: #023037;
+}
+
+
+/* logo */
+
+#logo {
+    display: inline-block;
+    color: #FFF;
+    text-decoration: none;
+    width: fit-content;
+}
+
+#logo img {
+    position: absolute;
+    width: 50px;
+    border-radius: 3px;
+    bottom: 25px;
+    z-index: 1;
+}
+
+#heading {
+    position: absolute;
+    color: white;
+    font-size: 35px;
+    line-height: 100px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    width: 50px;
+    left: 55px;
+    z-index: 1;
+}
+
+
+/* main navigation */
+
+nav {
+    background: #222;
+    color: #FFF;
+    height: 100px;
+    width: 100%;
+    font-family: 'Montserrat';
+    position: fixed;
+    top: 0;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 100px;
+    padding: 0 100px;
+    font-weight: bold;
+    width: 50px;
+    background-color: thistle;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    margin-top: 16px;
+    font-family: 'Montserrat';
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 5px;
+    font-family: 'Montserrat';
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-family: 'Montserrat';
+    text-decoration: none;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background: #444;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 100px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #222;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        position: absolute;
+        top: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    nav ul li a:hover,
+    nav ul li a.active {
+        background: none;
+        color: #444;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+
+/* styling our footer */
+
+footer {
+    background: #222;
+    color: #777;
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+footer img {
+    display: block;
+    border-radius: 5px;
+    width: 80px;
+    margin: 0 auto 10px;
+}
+
+.title {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    margin-top: 5%;
+    font-family: 'Karla';
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #292F33;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #ffffff;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgb(24, 148, 197);
+}
+
+li {
+    list-style: none;
+}
+
+#tweetEnd {
+    width: 100%;
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(105, 101, 101, 0.5);
+}
+
+#containerNews a {
+    text-decoration: none;
+}
+
+#header {
+    overflow: hidden;
+    padding: 15px 5px;
+    color: rgb(24, 148, 197);
+}
+
+#container {
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    float: right;
+    border: rgb(24, 148, 197) 5px solid;
+    background-color: #292F33;
+}
+
+#container:hover {
+    background-color: #24282b;
+}
+
+#wrapper {
+    margin: 10px auto;
+    padding: 20px;
+}
+
+#namePic {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#profilePic {
+    float: left;
+    border-radius: 50%;
+}
+
+.fa {
+    color: rgb(24, 148, 197);
+    opacity: 0.7;
+    float: right;
+}
+
+.fa:hover {
+    opacity: 1;
+}
+
+#tweet {
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+    line-height: 1.3rem;
+    font-weight: 400;
+}
+
+#lastUpdate {
+    padding: 5px;
+    height: auto;
+    float: right;
+    text-shadow: 2px 2px 5px rgb(24, 148, 197);
+}
+
+#containerNews {
+    width: 48.5%;
+    height: 100%;
+    overflow: auto;
+    float: left;
+    border: rgb(24, 148, 197) 5px solid;
+    background-color: #292F33;
+}
+
+#containerNews:hover {
+    background-color: #24282b;
+}
+
+#newsHeader {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 3rem;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+#containerNews p {
+    margin: 50px auto;
+    padding: 5px;
+    font-size: 1.5rem;
+}
+
+#containerNews p:hover {
+    text-decoration: underline;
+}
