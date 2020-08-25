@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <title>ABOUT</title>
     <link rel="stylesheet" href="css/about.css">
+    <link rel="icon" href="./img/corona.ico"/>
     <meta name="viewport" content="width=device-width, initial-sclae=1.0">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
@@ -20,14 +21,14 @@
                 <img src="img/corona.png" alt="Logo">
 
             </a>
-            <a href="/"><span id="heading">CODS</span></a>
+            <a href="/"><span id="heading">EVA</span></a>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
               <i class="fas fa-bars"></i>
             </label>
             <ul>
                 <li><a href="/maps">COVID-19 Tracker</a></li>
-                <li><a href="/evaChatbot">EVA</a></li>
+                <!--<li><a href="/evaChatbot">EVA</a></li>-->
                 <li><a href="/preditionsModel">Predictor</a></li>
                 <li><a href="newsAndTweets">News and Tweets</a></li>
                 <li><a href="/about">About</a></li>
@@ -54,13 +55,15 @@
     </script>
     <br><br><br>
     <h3 class="header">ABOUT</h3>
+    <p id="start">Hey there, Welcome to our page!</p>
     <div class="about-info">
-        <p id="start">Hey there, Welcome to our page!</p>
+        
         <p id='info'>This is our multi-functional website here to assist you during this pandemic. The problem we are trying to tackle is the lack of mental health support and lot of doubts regarding the pandemic during these times. In addition to this, we are also
             presenting statistics of COVID-19 throughout India and the World. We have also tried to mimic the SIR Mathematical model to predict the future stats of COVID-19. To make your life easier, we have compiled all the important news and tweets
             pertaining to COVID-19 in a single page.
-            <br><br>
-            <p style="color:#e4dcaf; size:300px; text-align: center;">TECH STACK</p>
+    </div>
+            <br><br></p>
+            <!--<p style="color:#e4dcaf; size:300px; text-align: center;">TECH STACK</p>
             <ul>
                 <li>Web development – Express, NodeJS, CSS.</li>
                 <li>Scraping FAQ’s and latest news – BeautifulSoup and Selenium.</li>
@@ -72,7 +75,7 @@
                 <li>Data Visualisation – D3 and Plotly</li>
             </ul>
         </p>
-        <!--<p id='frameworks'>
+        <p id='frameworks'>
             FRAMEWORKS USED
             <ul>
                 <li>RASA for our chatbot</li>
@@ -81,6 +84,59 @@
                 
             </ul>
         </p>-->
+        <h2 class="team">TECH STACK</h2>
+        <div class="flex-container">
+            <div class="flex-item">Web <br>Development
+                <br><span><img src="img/web-dev.png" style="margin-top: 37px;"></span>
+                <div id="inner-box">
+                    <p>Express, NodeJS, CSS</p>
+                </div>
+            </div>
+            <div class="flex-item">Scraping 
+                <br><span><img src="img/scraping.png" style="margin-top: 60px;"></span>
+                <div id="inner-box">
+                    <p>BeautifulSoup and Selenium</p>
+                </div>
+            </div>
+            <div class="flex-item">Twitter
+                <br><span><img src="img/twitter.png" style="margin-top: 60px;"></span>
+                <div id="inner-box">
+                    <p>Tweepy</p>
+                </div>
+            </div>
+            <div class="flex-item">Chatbot
+                <br><span><img src="img/chatbot.png" style="margin-top: 60px;"></span>
+                <div id="inner-box">
+                    <p>RASA : Rasa NLU, Rasa Core, Rasa X</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="flex-item">Emotion <br>Detection
+                <br><span><img src="img/emotion.png" style="margin-top: 37px;"></span>
+                <div id="inner-box">
+                    <p>Keras(LSTM) and NLTK</p>
+                </div>
+            </div>
+            <div class="flex-item">Prediction <br>Model
+                <br><span><img src="img/graph.png" style="margin-top: 37px;"></span>
+                <div id="inner-box">
+                    <p>SIR Model</p>
+                </div>
+            </div>
+            <div class="flex-item">Maps 
+                <br><span><img src="img/map.png" style="margin-top: 60px;"></span>
+                <div id="inner-box">
+                    <p>Mapbox and Leaflet</p>
+                </div>
+            </div>
+            <div class="flex-item">Data <br>Visualisation
+                <br><span><img src="img/data-viz.png" style="margin-top: 37px;"></span>
+                <div id="inner-box">
+                    <p>D3 and Plotly</p>
+                </div>
+            </div>
+        </div>
     </div>
     <br><br>
     <h2 class="team">THE TEAM</h2>
@@ -131,7 +187,9 @@
     </center>
 
     <footer>
-        <span>Center of Data Science, PES University 2020</span>
+        <span>Community of Data Science, PES University 2020&nbsp;&nbsp;|</span>&nbsp;&nbsp;
+        <a id="github" href="https://github.com/adimehta03/CODS">
+            <i class="fab fa-github" style="font-size:18px; color: white;"></i></a>
         <!-- Include all the libraries, languages and frameworks used to build the website -->
     </footer>
 

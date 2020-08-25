@@ -32,19 +32,13 @@ fetch('https://api.rootnet.in/covid19-in/stats/latest').then((response) => {retu
 
 
 function myFunction() {
-  var x = document.getElementById("EvaDiv");
+  alert("Click on the bottom right part of the page to start chatting");
+  /*var x = document.getElementById("EvaDiv");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
     x.style.display = "none";
-  }
-
-  var y = document.getElementById("extraDiv");
-  if (y.style.display === "none") {
-    y.style.display = "block";
-  } else {
-    y.style.display = "none";
-  }
+  }*/
 }
 
 (function(){

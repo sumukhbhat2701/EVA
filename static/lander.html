@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <title>HOME</title>
   <link rel="stylesheet" href="css/lander.css">
-  <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+  <link rel="icon" href="./img/corona.ico"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <body>
@@ -18,14 +19,14 @@
                 <img src="img/corona.png" alt="Logo">
                 
             </a> 
-            <a href="/"><span id="heading">CODS</span></a>
+            <a href="/"><span id="heading">EVA</span></a>
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
               <i class="fas fa-bars"></i>
             </label>
             <ul>
                 <li><a href="/maps">COVID-19 Tracker</a></li>
-                <li><a href="/evaChatbot">EVA</a></li>
+                <!--<li><a href="/evaChatbot">EVA</a></li>-->
                 <li><a href="/preditionsModel">Predictor</a></li>
                 <li><a href="newsAndTweets">News and Tweets</a></li>
                 <li><a href="/about">About</a></li>
@@ -53,7 +54,7 @@
         <video autoplay muted loop id="myVideo">
             <source src="img/covid_vid.mp4" type="video/mp4">
         </video>
-        <h1 class="hero-title">Our fight against <!--<span style="color:#ff0053">-->COVID-19.</span><span style="color:#47ce3b"> Stay safe.</span></h1>
+        <h1 class="hero-title">Our fight against <span style="color:#ff0053">COVID-19.</span><span style="color:#47ce3b"> Stay safe.</span></h1>
     </div>
     <br><br>
     <div class="stats">
@@ -78,9 +79,7 @@
                 <div class="card t"><i class="fa fa-eye"></i><h5>Recovered</h5><span id="Krecovered"></span></div>
             </div>
     </div>
-</section>
 
-<section class="about">
 <div class="flex-container">
 	<div class="flex-slide tracker">
 		<div class="flex-title flex-title-tracker">Tracker</div>
@@ -97,10 +96,11 @@
 		<div class="flex-title">EVA</div>
     <div class="flex-about">
       <p>This is an AI assisted chatbot that can answer your FAQs related to COVID-19 and mental health. You can also have a normal conversation. This was built using RASA framework.</p><br/>
-      <form method="get" action="myFunction()">
+        <button type="submit" onclick="myFunction()">CHAT NOW</button>
+      <!--<form method="get" action="myFunction()">
         <button type="submit">CHAT NOW</button>
       </form>
-      <!--<div id="EvaDiv">
+      <div id="EvaDiv">
         Click on the bottom left part of the page to start your conversation.
     </div>-->
     </div>
@@ -125,7 +125,9 @@
     </div>
 	</div>
 </div>
+
 </section></div>
+
 
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>

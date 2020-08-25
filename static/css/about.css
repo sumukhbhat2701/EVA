@@ -166,7 +166,13 @@ nav ul li a:hover {
 }
 
 .about-info {
-    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: justify;
+    background-color: #27636B;
+    margin: auto;
+    max-width: 850px;
+    height: 270px;
 }
 
 #frameworks {
@@ -179,16 +185,76 @@ nav ul li a:hover {
     color: white;
     font-style: normal;
     font-size: 30px;
+    text-align: center;
 }
 
 #info {
     color: white;
     font-style: normal;
     font-size: large;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
+.flex-container {
+    padding: 0;
+    margin-left: 200px;
+    margin-right: 200px;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    line-height:30px;
+    
+}
+.flex-item {
+    background: #27636B;
+    margin: 18px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    flex: 1 0 auto;
+    height:300px;
+    width: 210px;
+}
+.flex-item:before {
+    content:'';
+    float:left;
+    margin-left: 5px;
+    padding-top:100%;
+    
+}
+
+.flex-item #inner-box {
+    background: #222;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    transition: opacity .5s;
+  }
+
+.flex-item #inner-box p {
+    color: #fff;
+    text-align: center;
+    margin-top: 50%;
+  }
+
+.flex-item:hover #inner-box {
+    opacity: 0.9;
+    transition: opacity .5s;
+  }
+  
 .team {
     text-align: center;
     color: #e4dcaf;

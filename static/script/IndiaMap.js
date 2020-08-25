@@ -327,7 +327,7 @@ fetch("https://api.rootnet.in/covid19-in/stats/latest").then(response => respons
 
 
 function openNav(state, stateFlag = false) {
-    document.getElementById("mySidenav").style.width = "420px";
+    document.getElementById("mySidenav").style.width = "450px";
     document.getElementById("mySidenav").style.opacity = "1";
     document.getElementById("hover-details").style.visibility = 'hidden';
     try {
@@ -626,7 +626,7 @@ function openNav(state, stateFlag = false) {
                 divID2.setAttribute('id', "tester2")
                 divID2.style.width = "100%";
                 divID2.style.height = "40%";
-                divID2.style.marginTop = "100px";
+                divID2.style.marginTop = "150px";
                 divID2.style.marginBottom = "450px";
                 document.getElementById("mySidenav").appendChild(divID2);
 
@@ -670,7 +670,7 @@ function openNav(state, stateFlag = false) {
                     autosize: false,
                     height: 400,
                     width: "100%",
-                    margin: { l: 60, r: 50 },
+                    margin: { l: 100, r: 50 },
                     float: "left",
                     plot_bgcolor: "#111",
                     paper_bgcolor: "#111",
@@ -735,7 +735,7 @@ function openNav(state, stateFlag = false) {
                     autosize: false,
                     height: 600,
                     width: "100%",
-                    margin: { l: 60, r: 50 },
+                    margin: { l: 100, r: 50 },
                     float: "left",
                     plot_bgcolor: "#111",
                     paper_bgcolor: "#111",
