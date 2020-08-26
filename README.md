@@ -22,7 +22,7 @@
  6. `cd Tweets`
  7. `python script1.py python2.py`
  8. `cd ..`
- 9.  Open another terminal in the same directory and type - `rasa run -m models --enable-api --cors "*" --debug`
+ 9.  Open another terminal in the same directory and type - `rasa run -m models --enable-api --cors "*" --debug -p 5005`
  10. Open yet another terminal in the same directory and type - `rasa run actions`
  
  <em>If the 9th and 10th don't work for you then try `python -m rasa run -m models --enable-api --cors "*" --debug` and `python -m rasa run actions` respectively</em>
