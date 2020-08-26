@@ -28,6 +28,7 @@
  <em>If the 9th and 10th don't work for you then try `python -m rasa run -m models --enable-api --cors "*" --debug` and `python -m rasa run actions` respectively</em>
  
  11. Yet in another terminal in the same directory, type - `node server.js`
+ 12. Open your favourite browser and type `localhost:3000` in the address bar
  
  <hr>
  
