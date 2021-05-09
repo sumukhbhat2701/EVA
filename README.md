@@ -32,10 +32,6 @@
  
  <hr>
  
- ## LINK TO OUR DESKTOP WEBSITE WITHOUT THE CHATBOT - <a href="https://emotional-virtual-assistant.herokuapp.com/">Click me</a>
- 
- <hr>
- 
  ## VIDEO DEMO - <a href="https://drive.google.com/file/d/1kfu03ZltVwteUjAeg51WfLUgZINU8NYo/view?usp=drivesdk">Click me</a>
  
  <hr>
